@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/thiep-moi",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/",
+      "destination": "/index.html"
+    }
+  ]
+}
