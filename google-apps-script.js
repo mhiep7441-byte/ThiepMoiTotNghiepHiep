@@ -48,3 +48,4 @@ function doGet() {
     JSON.stringify({ status: "ok", message: "Graduation RSVP Webhook (Mai Quoc Hiep) is active." })
   ).setMimeType(ContentService.MimeType.JSON);
 }
+
