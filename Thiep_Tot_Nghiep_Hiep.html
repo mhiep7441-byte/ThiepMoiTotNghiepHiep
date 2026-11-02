@@ -1151,10 +1151,73 @@
       .send-btn{height:52px!important;border:none!important;font-weight:700;background:linear-gradient(135deg,#ea580c,#d97706)!important;box-shadow:0 12px 26px -6px rgba(234,88,12,.45)}
       .send-btn:hover{transform:translateY(-1px);filter:brightness(1.05)}
       @media (max-width:900px){.att-group{flex-direction:column}.att-group .ant-radio-button-wrapper{margin:0 0 10px!important}}
+
+      /* ---- WOW layer ---- */
+      body.loading{overflow:hidden}
+      body.loading .fade,body.loading .hero-title .line>span,body.loading .portrait-img-box img,body.loading .portrait-img-box::after{animation-play-state:paused}
+      #intro{position:fixed;inset:0;z-index:1000;pointer-events:all}
+      #intro.open{pointer-events:none}
+      .in-panel{position:absolute;left:0;width:100%;height:50.5%;background:radial-gradient(120% 140% at 50% 100%,#1e293b 0%,#0f172a 60%,#0b1120 100%);transition:transform 1s cubic-bezier(.76,0,.24,1) .35s}
+      .in-panel.top{top:0}
+      .in-panel.bot{bottom:0;background:radial-gradient(120% 140% at 50% 0%,#1e293b 0%,#0f172a 60%,#0b1120 100%)}
+      #intro.open .in-panel.top{transform:translateY(-101%)}
+      #intro.open .in-panel.bot{transform:translateY(101%)}
+      .in-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;color:#fff;padding:24px;transition:opacity .5s ease,transform .8s ease}
+      #intro.open .in-center{opacity:0;transform:scale(1.12)}
+      .in-kicker{font-size:12px;letter-spacing:.42em;text-transform:uppercase;color:#fb923c;font-weight:600;opacity:0;animation:inFade .8s .2s forwards}
+      .in-name{font-family:"Plus Jakarta Sans",sans-serif;font-weight:800;font-size:clamp(38px,9vw,92px);letter-spacing:-.03em;line-height:1.05;margin:18px 0 10px;display:flex;flex-wrap:wrap;justify-content:center;gap:0 .28em}
+      .in-name .w{display:inline-flex;overflow:hidden;padding:.04em 0}
+      .in-name .c{display:inline-block;transform:translateY(110%);animation:inRise .8s cubic-bezier(.22,1,.36,1) forwards;animation-delay:calc(.35s + var(--i)*.045s)}
+      .in-sub{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-size:clamp(20px,3vw,30px);color:rgba(255,255,255,.75);opacity:0;animation:inFade .8s 1s forwards}
+      .in-line{width:min(260px,60vw);height:2px;background:rgba(255,255,255,.14);margin-top:34px;border-radius:2px;overflow:hidden}
+      .in-line i{display:block;height:100%;width:100%;background:linear-gradient(90deg,#ea580c,#fbbf24);transform:scaleX(0);transform-origin:left;animation:inBar 1.5s .3s cubic-bezier(.65,0,.35,1) forwards}
+      @keyframes inRise{to{transform:none}}
+      @keyframes inFade{to{opacity:1}}
+      @keyframes inBar{to{transform:scaleX(1)}}
+
+      .cursor-glow{position:fixed;left:0;top:0;width:420px;height:420px;margin:-210px 0 0 -210px;border-radius:50%;background:radial-gradient(circle,rgba(251,146,60,.20),transparent 62%);pointer-events:none;z-index:0;opacity:0;transition:opacity .4s;will-change:transform}
+      .cursor-glow.on{opacity:1}
+
+      .marquee{overflow:hidden;background:var(--navy);color:#fff;transform:rotate(-1.4deg);margin:10px -20px 30px;padding:16px 0;box-shadow:0 20px 40px -18px rgba(15,23,42,.45)}
+      .marquee-track{display:flex;width:max-content;animation:marq 32s linear infinite}
+      .marquee:hover .marquee-track{animation-play-state:paused}
+      .marquee span{font-family:"Plus Jakarta Sans",sans-serif;font-weight:800;font-size:clamp(16px,2.2vw,24px);letter-spacing:.18em;text-transform:uppercase;padding:0 26px;white-space:nowrap}
+      .marquee span.o{color:#fb923c}
+      .marquee span.s{font-family:"Cormorant Garamond",serif;font-style:italic;text-transform:none;letter-spacing:0;font-weight:600;font-size:clamp(20px,2.6vw,30px);color:rgba(255,255,255,.8)}
+      @keyframes marq{to{transform:translateX(-50%)}}
+
+      .bento-card{position:relative;overflow:hidden}
+      .bento-card>*{position:relative;z-index:1}
+      .bento-card::before{content:"";position:absolute;inset:0;z-index:0;opacity:0;transition:opacity .35s;background:radial-gradient(380px circle at var(--mx,50%) var(--my,50%),rgba(234,88,12,.14),transparent 60%)}
+      .bento-card.featured::before{background:radial-gradient(380px circle at var(--mx,50%) var(--my,50%),rgba(251,146,60,.28),transparent 60%)}
+      .bento-card:hover::before{opacity:1}
+      .btn,.nav-cta{transition:transform .2s ease-out,box-shadow .25s ease,background .25s ease}
+      .hl-card{transition:transform .3s ease,box-shadow .3s ease}
+      .hl-card:hover{transform:translateY(-4px) rotate(-.6deg);box-shadow:0 14px 30px rgba(234,88,12,.14)}
+      .story-card::before{background-size:200% 100%;animation:shine 6s linear infinite}
+      .ambient-backdrop{animation:wob 9s ease-in-out infinite alternate}
+      @keyframes wob{from{transform:rotate(3deg)}to{transform:rotate(-2.5deg) scale(1.02)}}
+      .badge-pill{position:relative;overflow:hidden}
+      .badge-pill::after{content:"";position:absolute;top:0;left:-70%;width:50%;height:100%;background:linear-gradient(90deg,transparent,rgba(234,88,12,.18),transparent);transform:skewX(-20deg);animation:badgeSweep 4.5s 2.5s infinite}
+      @keyframes badgeSweep{0%{left:-70%}45%,100%{left:140%}}
+      .cd-box{transition:transform .3s ease}
+      .cd-box:hover{transform:translateY(-6px)}
+      @media (max-width:900px){.marquee{margin:6px -16px 18px}.cursor-glow{display:none}}
     </style>
   </head>
-  <body>
+  <body class="loading">
     <div class="progress-bar" id="progress"></div>
+    <div id="intro" aria-hidden="true">
+      <div class="in-panel top"></div>
+      <div class="in-panel bot"></div>
+      <div class="in-center">
+        <div class="in-kicker">FPT University HCMC</div>
+        <div class="in-name"><span class="w"><span class="c" style="--i:0">M</span><span class="c" style="--i:1">a</span><span class="c" style="--i:2">i</span></span><span class="w"><span class="c" style="--i:4">Q</span><span class="c" style="--i:5">u</span><span class="c" style="--i:6">ố</span><span class="c" style="--i:7">c</span></span><span class="w"><span class="c" style="--i:9">H</span><span class="c" style="--i:10">i</span><span class="c" style="--i:11">ệ</span><span class="c" style="--i:12">p</span></span></div>
+        <div class="in-sub">Class of 2026</div>
+        <div class="in-line"><i></i></div>
+      </div>
+    </div>
+    <div class="cursor-glow" id="glow"></div>
     <div class="topbar-wrap">
       <header class="topbar">
         <a class="brand" href="#home">
@@ -1246,6 +1309,10 @@
           </div>
         </div>
       </section>
+
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee-track"><span>Class of 2026</span><span class="o">✦</span><span class="s">Tân cử nhân</span><span class="o">✦</span><span>FPT University</span><span class="o">✦</span><span class="s">Hồ Chí Minh</span><span class="o">✦</span><span>07.11.2026</span><span class="o">✦</span><span class="s">Thứ Bảy</span><span class="o">✦</span><span>16:30</span><span class="o">✦</span><span class="s">Hẹn gặp bạn</span><span class="o">✦</span><span>Class of 2026</span><span class="o">✦</span><span class="s">Tân cử nhân</span><span class="o">✦</span><span>FPT University</span><span class="o">✦</span><span class="s">Hồ Chí Minh</span><span class="o">✦</span><span>07.11.2026</span><span class="o">✦</span><span class="s">Thứ Bảy</span><span class="o">✦</span><span>16:30</span><span class="o">✦</span><span class="s">Hẹn gặp bạn</span><span class="o">✦</span><span>Class of 2026</span><span class="o">✦</span><span class="s">Tân cử nhân</span><span class="o">✦</span><span>FPT University</span><span class="o">✦</span><span class="s">Hồ Chí Minh</span><span class="o">✦</span><span>07.11.2026</span><span class="o">✦</span><span class="s">Thứ Bảy</span><span class="o">✦</span><span>16:30</span><span class="o">✦</span><span class="s">Hẹn gặp bạn</span><span class="o">✦</span><span>Class of 2026</span><span class="o">✦</span><span class="s">Tân cử nhân</span><span class="o">✦</span><span>FPT University</span><span class="o">✦</span><span class="s">Hồ Chí Minh</span><span class="o">✦</span><span>07.11.2026</span><span class="o">✦</span><span class="s">Thứ Bảy</span><span class="o">✦</span><span>16:30</span><span class="o">✦</span><span class="s">Hẹn gặp bạn</span><span class="o">✦</span></div>
+      </div>
 
       <!-- Warm Invitation Story Card -->
       <section class="story-section wrap reveal" id="invite">
@@ -1403,6 +1470,7 @@
       <span>Lễ Tốt Nghiệp Đại học FPT TP.HCM · 07.11.2026 · 16:30</span>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/react@18.3.1/umd/react.production.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.13/dayjs.min.js"></script>
@@ -1451,6 +1519,61 @@
             window.scrollTo({ top: Math.max(0, top), behavior: "smooth" });
           });
         });
+
+        // ---------- WOW layer ----------
+        const COLORS = ["#ea580c", "#f59e0b", "#fdba74", "#0f172a", "#ffffff"];
+        window.fireConfetti = function (big) {
+          if (!window.confetti || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+          const fire = (ratio, opts) => confetti(Object.assign({ colors: COLORS, ticks: 220, disableForReducedMotion: true }, opts, { particleCount: Math.floor((big ? 220 : 140) * ratio) }));
+          const o = { origin: { y: 0.72 } };
+          fire(0.25, { spread: 28, startVelocity: 58, origin: { x: 0.2, y: 0.8 }, angle: 65 });
+          fire(0.25, { spread: 28, startVelocity: 58, origin: { x: 0.8, y: 0.8 }, angle: 115 });
+          fire(0.35, Object.assign({ spread: 100, decay: 0.91, scalar: 0.9 }, o));
+          fire(0.2, Object.assign({ spread: 120, startVelocity: 25, decay: 0.92, scalar: 1.2 }, o));
+          fire(0.1, Object.assign({ spread: 130, startVelocity: 45 }, o));
+        };
+
+        const intro = $("intro");
+        let opened = false;
+        function openIntro() {
+          if (opened || !intro) return;
+          opened = true;
+          intro.classList.add("open");
+          document.body.classList.remove("loading");
+          document.body.classList.add("ready");
+          setTimeout(() => window.fireConfetti(true), 700);
+          setTimeout(() => intro.remove(), 1700);
+        }
+        const wait = new Promise((r) => setTimeout(r, 1900));
+        const loaded = new Promise((r) => (document.readyState === "complete" ? r() : addEventListener("load", r)));
+        Promise.all([wait, loaded]).then(openIntro);
+        setTimeout(openIntro, 4500);
+
+        // cursor glow
+        const glow = $("glow");
+        if (glow && matchMedia("(hover:hover)").matches) {
+          let gx = 0, gy = 0, cx = 0, cy = 0;
+          addEventListener("mousemove", (e) => { gx = e.clientX; gy = e.clientY; glow.classList.add("on"); }, { passive: true });
+          (function loop() { cx += (gx - cx) * 0.12; cy += (gy - cy) * 0.12; glow.style.transform = "translate(" + cx + "px," + cy + "px)"; requestAnimationFrame(loop); })();
+        }
+
+        // spotlight on cards + magnetic buttons
+        document.querySelectorAll(".bento-card").forEach((c) => {
+          c.addEventListener("mousemove", (e) => {
+            const r = c.getBoundingClientRect();
+            c.style.setProperty("--mx", e.clientX - r.left + "px");
+            c.style.setProperty("--my", e.clientY - r.top + "px");
+          });
+        });
+        if (matchMedia("(hover:hover)").matches) {
+          document.querySelectorAll(".btn, .nav-cta").forEach((b) => {
+            b.addEventListener("mousemove", (e) => {
+              const r = b.getBoundingClientRect();
+              b.style.transform = "translate(" + (e.clientX - r.left - r.width / 2) * 0.18 + "px," + (e.clientY - r.top - r.height / 2) * 0.3 + "px)";
+            });
+            b.addEventListener("mouseleave", () => (b.style.transform = ""));
+          });
+        }
 
         // Scroll progress + reveal + tilt
         const bar = $("progress");
@@ -1555,6 +1678,7 @@
             if (r.ok === null) return;
             setStatus(r);
             r.ok ? message.success(r.text) : message.error(r.text);
+            if (r.ok && window.fireConfetti) window.fireConfetti(false);
             if (r.ok && !r.keep) form.resetFields();
           };
           return h(
