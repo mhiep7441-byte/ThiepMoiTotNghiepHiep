@@ -1689,7 +1689,7 @@
                 h(Radio.Button, { value: "yes", style: { flex: 1, textAlign: "center" } }, "Mình sẽ đến dự"),
                 h(Radio.Button, { value: "no", style: { flex: 1, textAlign: "center" } }, "Gửi lời chúc từ xa"))),
             h(Form.Item, { name: "wish", label: "Lời nhắn dành cho Hiệp" },
-              h(Input.TextArea, { maxLength: 1000, showCount: true, autoSize: { minRows: 4, maxRows: 8 }, placeholder: "Viết vài dòng chúc mừng hoặc nhắn nhủ cho Hiệp nhé..." })),
+              h(Input.TextArea, { maxLength: 1000, showCount: true, autoSize: { minRows: 4, maxRows: 8 }, placeholder: "Viết vài dòng hay có ghét gì thì nói luôn đi nhá 🗣️" })),
             h(Button, { type: "primary", htmlType: "submit", block: true, loading, className: "send-btn" }, loading ? "Đang gửi…" : "Gửi xác nhận & lời chúc"),
             status && h("div", { className: "feedback " + (status.ok ? "ok" : "error"), role: "status" }, status.text),
           );
