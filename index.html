@@ -6,20 +6,20 @@
       name="viewport"
       content="width=device-width,initial-scale=1,viewport-fit=cover"
     />
-    <meta name="theme-color" content="#faf6f0" />
+    <meta name="theme-color" content="#fcf8f2" />
     <meta
       name="description"
-      content="Thân mời bạn đến chung vui trong lễ tốt nghiệp của Mai Quốc Hiệp — FPT University HCMC, Thứ Bảy 07.11.2026 · 16:00."
+      content="Thân mời bạn đến chung vui trong Lễ Tốt Nghiệp của Mai Quốc Hiệp — FPT University HCMC, Thứ Bảy 07.11.2026 · 16:30."
     />
     <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Mai Quốc Hiệp · Graduation 2026" />
+    <meta property="og:site_name" content="Mai Quốc Hiệp · Lễ Tốt Nghiệp 2026" />
     <meta
       property="og:title"
       content="Thiệp mời Tốt nghiệp — Mai Quốc Hiệp"
     />
     <meta
       property="og:description"
-      content="FPT University HCMC · Thứ Bảy, 07.11.2026 · 16:00 — Một cột mốc đáng nhớ, sẽ thật tuyệt nếu có bạn ở đó."
+      content="FPT University HCMC · Thứ Bảy, 07.11.2026 · 16:30 — Một cột mốc đáng nhớ, sẽ thật tuyệt nếu có bạn ở đó."
     />
     <meta
       property="og:image"
@@ -42,49 +42,61 @@
       content="Thiệp mời Tốt nghiệp — Mai Quốc Hiệp"
     />
     <meta
-      name="twitter:description"
-      content="FPT University HCMC · Thứ Bảy, 07.11.2026 · 16:00"
+      property="twitter:description"
+      content="FPT University HCMC · Thứ Bảy, 07.11.2026 · 16:30"
     />
     <meta
       name="twitter:image"
       content="https://raw.githubusercontent.com/mhiep7441-byte/ThiepMoiTotNghiepHiep/main/access/og-banner.jpg"
     />
     <link rel="icon" href="./access/og-preview.jpg" type="image/jpeg" />
-    <title>Mai Quốc Hiệp — The Graduation Issue · 2026</title>
+    <title>Thiệp Mời Tốt Nghiệp — Mai Quốc Hiệp · 2026</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Dancing+Script:wght@600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500;1,600&family=Dancing+Script:wght@600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap"
       rel="stylesheet"
     />
     <style>
       :root {
-        --paper: #faf6f0;
-        --paper-warm: #f3ece1;
-        --card: #fffdf9;
-        --ink: #1c1917;
-        --sub: #665e54;
-        --muted: #948a7e;
-        --rule: #ddd3c5;
-        --accent: #d85a1a;
-        --navy: #14365d;
-        --green: #186a3b;
+        --bg: #fcf8f2;
+        --bg-soft: #f6efe4;
+        --surface: rgba(255, 255, 255, 0.86);
+        --surface-solid: #ffffff;
+        --ink: #18181b;
+        --sub: #52525b;
+        --muted: #8b8680;
+        --border: rgba(24, 24, 27, 0.08);
+        --border-strong: rgba(24, 24, 27, 0.14);
+        --brand: #ea580c;
+        --brand-light: #ffedd5;
+        --brand-glow: rgba(234, 88, 12, 0.18);
+        --gold: #d97706;
+        --navy: #0f172a;
+        --green: #15803d;
+        --radius-xl: 32px;
+        --radius-lg: 24px;
+        --radius-md: 16px;
+        --shadow-soft: 0 20px 50px -12px rgba(24, 24, 27, 0.07);
+        --shadow-card: 0 28px 64px -16px rgba(15, 23, 42, 0.12);
       }
+
       * {
         box-sizing: border-box;
       }
+
       html {
         scroll-behavior: smooth;
       }
+
       body {
         margin: 0;
         color: var(--ink);
-        background-color: var(--paper);
-        background-image: radial-gradient(
-          rgba(28, 25, 23, 0.03) 1px,
-          transparent 0
-        );
-        background-size: 24px 24px;
+        background-color: var(--bg);
+        background-image:
+          radial-gradient(at 12% 10%, rgba(251, 146, 60, 0.15) 0px, transparent 48%),
+          radial-gradient(at 88% 18%, rgba(245, 158, 11, 0.12) 0px, transparent 50%),
+          radial-gradient(at 50% 85%, rgba(234, 88, 12, 0.08) 0px, transparent 55%);
         font-family:
           "Be Vietnam Pro",
           -apple-system,
@@ -92,631 +104,950 @@
           "Segoe UI",
           sans-serif;
         -webkit-font-smoothing: antialiased;
+        overflow-x: hidden;
       }
+
       button,
       input,
       textarea,
       select {
         font: inherit;
       }
+
       button {
         cursor: pointer;
       }
+
       a {
         text-decoration: none;
         color: inherit;
       }
+
       ::selection {
-        background: #f5d8c2;
+        background: #fed7aa;
         color: var(--ink);
       }
-      .serif {
-        font-family: "Playfair Display", "Cormorant Garamond", Georgia, serif;
-      }
+
       .wrap {
-        width: min(100% - 48px, 1080px);
-        margin: auto;
+        width: min(100% - 40px, 1140px);
+        margin: 0 auto;
       }
 
-      /* Editorial Masthead */
-      .masthead {
-        padding-top: 18px;
+      /* Floating Navigation Pill */
+      .topbar-wrap {
+        position: sticky;
+        top: 16px;
+        z-index: 50;
+        padding: 0 20px;
+        margin-top: 16px;
       }
-      .masthead-inner {
-        border-top: 2px solid var(--ink);
-        border-bottom: 1px solid var(--rule);
-        padding: 14px 0;
-        display: grid;
-        grid-template-columns: 1fr auto 1fr;
+
+      .topbar {
+        max-width: 1140px;
+        margin: 0 auto;
+        background: rgba(255, 255, 255, 0.82);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        border: 1px solid rgba(255, 255, 255, 0.9);
+        box-shadow: 0 10px 30px -10px rgba(24, 24, 27, 0.08);
+        border-radius: 999px;
+        padding: 10px 14px 10px 22px;
+        display: flex;
         align-items: center;
+        justify-content: space-between;
         gap: 16px;
       }
-      .masthead-meta {
-        font-size: 11px;
-        letter-spacing: 0.16em;
-        text-transform: uppercase;
-        color: var(--sub);
-        font-weight: 500;
-      }
-      .masthead-brand {
+
+      .brand {
         display: inline-flex;
         align-items: center;
-        gap: 14px;
+        gap: 12px;
       }
-      .masthead-brand img {
-        height: 30px;
+
+      .brand img {
+        height: 28px;
         width: auto;
         object-fit: contain;
-        display: block;
       }
-      .masthead-divider {
+
+      .brand-sep {
         width: 1px;
-        height: 20px;
-        background: var(--rule);
-      }
-      .masthead-title {
-        font-family: "Playfair Display", Georgia, serif;
-        font-size: 16px;
-        font-weight: 600;
-        letter-spacing: 0.02em;
-      }
-      .masthead-action {
-        justify-self: end;
-        font-size: 11px;
-        font-weight: 600;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-        color: var(--accent);
-        padding-bottom: 2px;
-        border-bottom: 1px solid var(--accent);
-        transition: 0.2s;
-      }
-      .masthead-action:hover {
-        color: var(--navy);
-        border-color: var(--navy);
+        height: 18px;
+        background: var(--border-strong);
       }
 
-      /* Cover Spread (Hero) */
-      .hero {
-        padding: 58px 0 90px;
-        text-align: center;
-      }
-      .issue-tag {
-        font-size: 11px;
-        letter-spacing: 0.24em;
-        text-transform: uppercase;
-        color: var(--sub);
-        margin-bottom: 18px;
-      }
-      .hero h1 {
-        font-family: "Playfair Display", Georgia, serif;
-        font-size: clamp(54px, 9.5vw, 118px);
-        font-weight: 500;
-        line-height: 0.96;
-        letter-spacing: -0.03em;
-        margin: 0 0 42px;
-        color: var(--ink);
-      }
-      .hero h1 em {
-        font-family: "Playfair Display", Georgia, serif;
-        font-style: italic;
-        font-weight: 400;
-        color: var(--accent);
+      .brand-name {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        letter-spacing: -0.01em;
       }
 
-      /* Three-column Editorial Showcase around Arch Portrait */
-      .editorial-stage {
-        display: grid;
-        grid-template-columns: 1fr minmax(280px, 390px) 1fr;
+      .nav-links {
+        display: flex;
         align-items: center;
-        gap: 40px;
-        margin: 0 auto 48px;
+        gap: 24px;
+        font-size: 13px;
+        font-weight: 500;
+        color: var(--sub);
       }
-      .stage-wing {
-        text-align: left;
-        border-top: 1px solid var(--rule);
-        border-bottom: 1px solid var(--rule);
-        padding: 24px 0;
+
+      .nav-links a:hover {
+        color: var(--brand);
       }
-      .stage-wing.right {
-        text-align: right;
-      }
-      .wing-kicker {
-        font-size: 10px;
-        letter-spacing: 0.22em;
-        text-transform: uppercase;
-        color: var(--muted);
-        margin-bottom: 10px;
-        display: block;
-      }
-      .wing-main {
-        font-family: "Playfair Display", Georgia, serif;
-        font-size: clamp(22px, 2.4vw, 30px);
+
+      .nav-cta {
+        background: var(--ink);
+        color: #fff;
+        font-size: 13px;
         font-weight: 600;
-        line-height: 1.2;
-        color: var(--ink);
-        margin-bottom: 8px;
+        padding: 10px 20px;
+        border-radius: 999px;
+        transition: all 0.25s ease;
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
       }
-      .wing-sub {
+
+      .nav-cta:hover {
+        background: var(--brand);
+        transform: translateY(-1px);
+        box-shadow: 0 8px 20px rgba(234, 88, 12, 0.28);
+      }
+
+      /* Asymmetric Hero Showcase */
+      .hero {
+        padding: 56px 0 84px;
+      }
+
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1.08fr 0.92fr;
+        gap: 56px;
+        align-items: center;
+      }
+
+      .badge-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--surface-solid);
+        border: 1px solid rgba(234, 88, 12, 0.22);
+        padding: 8px 16px;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 600;
+        color: var(--brand);
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        box-shadow: 0 4px 16px rgba(234, 88, 12, 0.08);
+        margin-bottom: 24px;
+      }
+
+      .badge-dot {
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background: var(--brand);
+        box-shadow: 0 0 0 4px rgba(234, 88, 12, 0.2);
+      }
+
+      .hero-title {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: clamp(40px, 5.6vw, 68px);
+        font-weight: 800;
+        line-height: 1.06;
+        letter-spacing: -0.03em;
+        margin: 0 0 22px;
+        color: var(--ink);
+      }
+
+      .hero-title .serif-italic {
         font-family: "Cormorant Garamond", Georgia, serif;
         font-style: italic;
-        font-size: 18px;
-        color: var(--sub);
+        font-weight: 600;
+        color: var(--brand);
+        font-size: 1.12em;
+        padding-right: 4px;
       }
 
-      /* Arch Portrait Frame */
-      .arch-frame {
-        background: var(--card);
-        padding: 14px 14px 20px;
-        border: 1px solid var(--rule);
-        border-radius: 220px 220px 8px 8px;
-        box-shadow: 0 24px 60px rgba(28, 25, 23, 0.08);
+      .hero-lead {
+        font-size: clamp(16px, 1.4vw, 18.5px);
+        line-height: 1.75;
+        color: var(--sub);
+        margin: 0 0 32px;
+        max-width: 540px;
+      }
+
+      /* Quick Event Highlights Strip in Hero */
+      .hero-highlights {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 12px;
+        margin-bottom: 34px;
+        max-width: 560px;
+      }
+
+      .hl-card {
+        background: var(--surface);
+        backdrop-filter: blur(10px);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-md);
+        padding: 14px 16px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.03);
+      }
+
+      .hl-label {
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--muted);
+        display: block;
+        margin-bottom: 4px;
+      }
+
+      .hl-val {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: 15px;
+        font-weight: 700;
+        color: var(--ink);
+      }
+
+      .hl-val.accent {
+        color: var(--brand);
+      }
+
+      .hero-actions {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        height: 52px;
+        padding: 0 28px;
+        border-radius: 999px;
+        font-size: 14px;
+        font-weight: 600;
+        transition: all 0.25s ease;
+      }
+
+      .btn-primary {
+        background: linear-gradient(135deg, #ea580c 0%, #d97706 100%);
+        color: #fff;
+        box-shadow: 0 12px 28px -6px rgba(234, 88, 12, 0.42);
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 18px 34px -6px rgba(234, 88, 12, 0.52);
+      }
+
+      .btn-secondary {
+        background: var(--surface-solid);
+        color: var(--ink);
+        border: 1px solid var(--border-strong);
+      }
+
+      .btn-secondary:hover {
+        border-color: var(--ink);
+        background: var(--bg-soft);
+      }
+
+      /* Right Column: Modern Studio Gallery Card (No Arch!) */
+      .portrait-showcase {
         position: relative;
+        max-width: 440px;
+        margin: 0 auto;
+        width: 100%;
       }
-      .arch-inner {
-        border-radius: 206px 206px 4px 4px;
+
+      .ambient-backdrop {
+        position: absolute;
+        inset: -14px;
+        background: linear-gradient(135deg, rgba(251, 146, 60, 0.24), rgba(15, 23, 42, 0.08));
+        border-radius: 36px;
+        transform: rotate(3deg);
+        z-index: 0;
+        transition: transform 0.4s ease;
+      }
+
+      .portrait-showcase:hover .ambient-backdrop {
+        transform: rotate(1.5deg) scale(1.01);
+      }
+
+      .portrait-card {
+        position: relative;
+        z-index: 1;
+        background: var(--surface-solid);
+        padding: 16px 16px 22px;
+        border-radius: 28px;
+        box-shadow: var(--shadow-card);
+        border: 1px solid rgba(255, 255, 255, 0.9);
+      }
+
+      .portrait-img-box {
+        position: relative;
+        border-radius: 18px;
         overflow: hidden;
-        aspect-ratio: 2 / 2.85;
-        background: #2b1d14;
+        aspect-ratio: 3 / 4;
+        background: #f3ece1;
       }
-      .arch-inner img {
+
+      .portrait-img-box img {
         width: 100%;
         height: 100%;
         object-fit: cover;
-        object-position: center top;
+        object-position: center 15%;
         display: block;
-        transition: transform 0.8s ease;
-      }
-      .arch-frame:hover .arch-inner img {
-        transform: scale(1.02);
-      }
-      .arch-caption {
-        margin-top: 14px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 6px;
-        font-family: "Cormorant Garamond", Georgia, serif;
-        font-style: italic;
-        font-size: 15px;
-        color: var(--sub);
+        transition: transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
       }
 
-      .hero-deck {
-        font-family: "Cormorant Garamond", Georgia, serif;
-        font-size: clamp(21px, 2.4vw, 27px);
-        line-height: 1.55;
-        color: var(--sub);
-        max-width: 640px;
-        margin: 0 auto 34px;
+      .portrait-card:hover .portrait-img-box img {
+        transform: scale(1.03);
       }
-      .hero-buttons {
+
+      /* Floating Glass Tag on Photo */
+      .floating-tag {
+        position: absolute;
+        top: 16px;
+        left: 16px;
+        background: rgba(255, 255, 255, 0.88);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        padding: 7px 14px;
+        border-radius: 999px;
+        font-size: 12px;
+        font-weight: 700;
+        color: var(--ink);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .portrait-footer {
+        margin-top: 16px;
+        padding: 0 6px;
         display: flex;
-        gap: 14px;
-        justify-content: center;
-        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 12px;
       }
-      .btn-ed {
+
+      .grad-name {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: 18px;
+        font-weight: 800;
+        color: var(--ink);
+      }
+
+      .grad-school {
+        font-size: 13px;
+        color: var(--sub);
+        margin-top: 2px;
+      }
+
+      .grad-year-chip {
+        background: var(--brand-light);
+        color: var(--brand);
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-weight: 800;
+        font-size: 13px;
+        padding: 8px 14px;
+        border-radius: 12px;
+      }
+
+      /* Floating Time Sticker */
+      .floating-sticker {
+        position: absolute;
+        bottom: 84px;
+        left: -24px;
+        z-index: 2;
+        background: var(--navy);
+        color: #fff;
+        padding: 14px 18px;
+        border-radius: 20px;
+        box-shadow: 0 18px 38px rgba(15, 23, 42, 0.25);
+        display: flex;
+        align-items: center;
+        gap: 12px;
+      }
+
+      .sticker-time {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: 22px;
+        font-weight: 800;
+        color: #fb923c;
+        line-height: 1;
+      }
+
+      .sticker-meta {
+        font-size: 12px;
+        line-height: 1.35;
+        color: rgba(255, 255, 255, 0.85);
+      }
+
+      /* Invitation Message Section */
+      .story-section {
+        padding: 72px 0;
+      }
+
+      .story-card {
+        background: var(--surface-solid);
+        border-radius: var(--radius-xl);
+        padding: clamp(32px, 5vw, 64px);
+        box-shadow: var(--shadow-soft);
+        border: 1px solid var(--border);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .story-card::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 6px;
+        background: linear-gradient(90deg, #ea580c, #f59e0b, #14365d);
+      }
+
+      .story-grid {
+        display: grid;
+        grid-template-columns: 0.9fr 1.1fr;
+        gap: 48px;
+        align-items: center;
+      }
+
+      .section-kicker {
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.14em;
+        color: var(--brand);
+        display: inline-block;
+        margin-bottom: 12px;
+      }
+
+      .story-heading {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: clamp(28px, 3.8vw, 44px);
+        font-weight: 800;
+        line-height: 1.15;
+        letter-spacing: -0.02em;
+        margin: 0 0 18px;
+      }
+
+      .story-quote {
+        font-family: "Cormorant Garamond", Georgia, serif;
+        font-style: italic;
+        font-size: 22px;
+        line-height: 1.5;
+        color: var(--sub);
+        margin: 0;
+        padding-left: 18px;
+        border-left: 3px solid var(--brand);
+      }
+
+      .story-content {
+        font-size: 16.5px;
+        line-height: 1.85;
+        color: #3f3f46;
+      }
+
+      .story-content p {
+        margin: 0 0 18px;
+      }
+
+      .story-sign {
+        margin-top: 28px;
+        padding-top: 22px;
+        border-top: 1px dashed var(--border-strong);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+      }
+
+      .sign-label {
+        font-size: 13px;
+        color: var(--muted);
+      }
+
+      .signature {
+        font-family: "Dancing Script", cursive;
+        font-size: 38px;
+        color: var(--brand);
+        line-height: 1;
+      }
+
+      /* Event Boarding Pass / Ticket Details */
+      .ticket-section {
+        padding: 40px 0 84px;
+      }
+
+      .section-head {
+        text-align: center;
+        max-width: 620px;
+        margin: 0 auto 44px;
+      }
+
+      .section-head h2 {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: clamp(28px, 4vw, 42px);
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        margin: 0 0 12px;
+      }
+
+      .section-head p {
+        color: var(--sub);
+        font-size: 16px;
+        margin: 0;
+      }
+
+      .bento-details {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+      }
+
+      .bento-card {
+        background: var(--surface-solid);
+        border: 1px solid var(--border);
+        border-radius: var(--radius-lg);
+        padding: 32px 28px;
+        box-shadow: var(--shadow-soft);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        transition: transform 0.25s ease, box-shadow 0.25s ease;
+      }
+
+      .bento-card:hover {
+        transform: translateY(-4px);
+        box-shadow: var(--shadow-card);
+      }
+
+      .bento-card.featured {
+        background: linear-gradient(145deg, #0f172a 0%, #1e293b 100%);
+        color: #fff;
+        border: none;
+      }
+
+      .bento-icon {
+        width: 48px;
+        height: 48px;
+        border-radius: 14px;
+        background: var(--brand-light);
+        color: var(--brand);
         display: inline-flex;
         align-items: center;
         justify-content: center;
-        min-height: 48px;
-        padding: 0 28px;
-        font-size: 12px;
-        font-weight: 600;
-        letter-spacing: 0.14em;
-        text-transform: uppercase;
-        border: 1px solid var(--ink);
-        transition: 0.25s;
-      }
-      .btn-ed.primary {
-        background: var(--ink);
-        color: var(--paper);
-      }
-      .btn-ed.primary:hover {
-        background: var(--accent);
-        border-color: var(--accent);
-      }
-      .btn-ed.outline {
-        background: transparent;
-        color: var(--ink);
-      }
-      .btn-ed.outline:hover {
-        background: var(--paper-warm);
+        font-size: 22px;
+        margin-bottom: 22px;
       }
 
-      /* Section I: The Invitation Letter */
-      .letter-section {
-        padding: 90px 0;
-        background: var(--paper-warm);
-        border-top: 1px solid var(--rule);
-        border-bottom: 1px solid var(--rule);
+      .bento-card.featured .bento-icon {
+        background: rgba(251, 146, 60, 0.16);
+        color: #fb923c;
       }
-      .letter-card {
-        max-width: 820px;
-        margin: 0 auto;
-        background: var(--card);
-        padding: clamp(36px, 6vw, 76px);
-        border: 1px solid var(--rule);
-        outline: 1px solid var(--rule);
-        outline-offset: -12px;
-        box-shadow: 0 20px 50px rgba(28, 25, 23, 0.04);
-      }
-      .section-num {
-        font-family: "Cormorant Garamond", Georgia, serif;
-        font-style: italic;
-        font-size: 18px;
-        color: var(--accent);
-        display: block;
+
+      .bento-label {
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        color: var(--muted);
         margin-bottom: 8px;
-      }
-      .letter-title {
-        font-family: "Playfair Display", Georgia, serif;
-        font-size: clamp(34px, 4.8vw, 54px);
-        font-weight: 500;
-        line-height: 1.12;
-        margin: 0 0 32px;
-        letter-spacing: -0.02em;
-      }
-      .letter-body {
-        font-size: clamp(16px, 1.8vw, 19px);
-        line-height: 1.85;
-        color: #3d3730;
-        font-weight: 400;
-      }
-      .letter-body p {
-        margin: 0 0 22px;
-      }
-      .dropcap::first-letter {
-        font-family: "Playfair Display", Georgia, serif;
-        float: left;
-        font-size: 64px;
-        line-height: 0.82;
-        padding-top: 4px;
-        padding-right: 14px;
-        color: var(--accent);
-        font-weight: 600;
-      }
-      .letter-sign {
-        margin-top: 38px;
-        padding-top: 26px;
-        border-top: 1px solid var(--rule);
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        flex-wrap: wrap;
-        gap: 20px;
-      }
-      .letter-sign-meta {
-        font-size: 12px;
-        color: var(--muted);
-        letter-spacing: 0.08em;
-        text-transform: uppercase;
-      }
-      .signature {
-        font-family: "Dancing Script", cursive;
-        font-size: 42px;
-        color: var(--navy);
-        line-height: 1;
+        display: block;
       }
 
-      /* Section II: Architectural Event Details */
-      .details-section {
-        padding: 110px 0;
+      .bento-card.featured .bento-label {
+        color: rgba(255, 255, 255, 0.65);
       }
-      .details-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: flex-end;
-        flex-wrap: wrap;
-        gap: 20px;
-        padding-bottom: 28px;
-        border-bottom: 2px solid var(--ink);
-      }
-      .details-header h2 {
-        font-family: "Playfair Display", Georgia, serif;
-        font-size: clamp(36px, 5vw, 60px);
-        font-weight: 500;
-        margin: 0;
-        letter-spacing: -0.02em;
-      }
-      .details-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        border-bottom: 1px solid var(--rule);
-      }
-      .detail-col {
-        padding: 42px 32px 42px 0;
-      }
-      .detail-col + .detail-col {
-        padding-left: 32px;
-        border-left: 1px solid var(--rule);
-      }
-      .detail-index {
-        font-family: "Cormorant Garamond", Georgia, serif;
-        font-style: italic;
-        font-size: 16px;
-        color: var(--accent);
-        margin-bottom: 14px;
-        display: block;
-      }
-      .detail-label {
-        font-size: 11px;
-        letter-spacing: 0.18em;
-        text-transform: uppercase;
-        color: var(--muted);
-        font-weight: 600;
-        margin-bottom: 18px;
-        display: block;
-      }
-      .detail-figure {
-        font-family: "Playfair Display", Georgia, serif;
-        font-size: clamp(32px, 3.8vw, 48px);
-        font-weight: 500;
-        line-height: 1.1;
-        color: var(--ink);
+
+      .bento-value {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: clamp(26px, 3vw, 34px);
+        font-weight: 800;
+        line-height: 1.15;
         margin-bottom: 12px;
       }
-      .detail-note {
-        font-size: 14px;
+
+      .bento-card.featured .bento-value {
+        color: #fb923c;
+      }
+
+      .bento-desc {
+        font-size: 14.5px;
         line-height: 1.6;
         color: var(--sub);
-      }
-      .ed-link {
-        display: inline-block;
-        margin-top: 18px;
-        font-size: 12px;
-        font-weight: 600;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
-        color: var(--navy);
-        border-bottom: 1px solid var(--navy);
-        padding-bottom: 3px;
-      }
-      .ed-link:hover {
-        color: var(--accent);
-        border-color: var(--accent);
-      }
-
-      /* Section III: Editorial Countdown */
-      .countdown-section {
-        background: var(--navy);
-        color: var(--paper);
-        padding: 96px 0;
-        text-align: center;
-        position: relative;
-      }
-      .countdown-section .section-num {
-        color: #f3a678;
-      }
-      .countdown-section h2 {
-        font-family: "Playfair Display", Georgia, serif;
-        font-size: clamp(34px, 4.8vw, 56px);
-        font-weight: 400;
-        margin: 0 0 14px;
-      }
-      .countdown-section h2 em {
-        font-style: italic;
-        color: #f3a678;
-      }
-      .countdown-sub {
-        font-family: "Cormorant Garamond", Georgia, serif;
-        font-style: italic;
-        font-size: 21px;
-        color: rgba(250, 246, 240, 0.76);
-        margin: 0 0 48px;
-      }
-      .count-row {
-        display: inline-grid;
-        grid-template-columns: repeat(4, minmax(90px, 150px));
-        border-top: 1px solid rgba(250, 246, 240, 0.2);
-        border-bottom: 1px solid rgba(250, 246, 240, 0.2);
-      }
-      .count-item {
-        padding: 28px 16px;
-      }
-      .count-item + .count-item {
-        border-left: 1px solid rgba(250, 246, 240, 0.2);
-      }
-      .count-item b {
-        display: block;
-        font-family: "Playfair Display", Georgia, serif;
-        font-size: clamp(38px, 5.2vw, 64px);
-        font-weight: 400;
-        line-height: 1;
-        font-variant-numeric: tabular-nums;
-        color: var(--paper);
-      }
-      .count-item:first-child b {
-        color: #f3a678;
-      }
-      .count-item span {
-        display: block;
-        margin-top: 10px;
-        font-size: 10px;
-        letter-spacing: 0.2em;
-        text-transform: uppercase;
-        color: rgba(250, 246, 240, 0.65);
-      }
-
-      /* Section IV: RSVP Postcard */
-      .rsvp-section {
-        padding: 115px 0;
-      }
-      .rsvp-layout {
-        display: grid;
-        grid-template-columns: 0.85fr 1.15fr;
-        gap: 76px;
-        align-items: start;
-      }
-      .rsvp-title {
-        font-family: "Playfair Display", Georgia, serif;
-        font-size: clamp(36px, 4.8vw, 56px);
-        font-weight: 500;
-        line-height: 1.1;
         margin: 0 0 22px;
       }
-      .rsvp-intro {
+
+      .bento-card.featured .bento-desc {
+        color: rgba(255, 255, 255, 0.78);
+      }
+
+      .bento-action {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--brand);
+        margin-top: auto;
+      }
+
+      .bento-card.featured .bento-action {
+        color: #fff;
+        background: rgba(255, 255, 255, 0.12);
+        padding: 10px 16px;
+        border-radius: 999px;
+        width: fit-content;
+      }
+
+      .bento-card.featured .bento-action:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      /* Modern Glass Countdown Banner */
+      .countdown-wrap {
+        margin-top: 28px;
+        background: linear-gradient(135deg, #fff7ed 0%, #ffedd5 100%);
+        border: 1px solid rgba(234, 88, 12, 0.18);
+        border-radius: var(--radius-xl);
+        padding: 40px 36px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 32px;
+        flex-wrap: wrap;
+      }
+
+      .cd-text h3 {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: clamp(22px, 2.8vw, 30px);
+        font-weight: 800;
+        margin: 0 0 6px;
+        color: var(--ink);
+      }
+
+      .cd-text p {
+        margin: 0;
+        font-size: 15px;
+        color: var(--sub);
+      }
+
+      .cd-boxes {
+        display: grid;
+        grid-template-columns: repeat(4, minmax(78px, 105px));
+        gap: 12px;
+      }
+
+      .cd-box {
+        background: var(--surface-solid);
+        border-radius: 18px;
+        padding: 16px 12px;
+        text-align: center;
+        box-shadow: 0 8px 20px rgba(234, 88, 12, 0.08);
+        border: 1px solid rgba(234, 88, 12, 0.12);
+      }
+
+      .cd-box b {
+        display: block;
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: clamp(26px, 3vw, 36px);
+        font-weight: 800;
+        color: var(--brand);
+        line-height: 1;
+        font-variant-numeric: tabular-nums;
+      }
+
+      .cd-box span {
+        display: block;
+        margin-top: 6px;
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--muted);
+      }
+
+      /* RSVP & Guestbook Section */
+      .rsvp-section {
+        padding: 40px 0 96px;
+      }
+
+      .rsvp-container {
+        background: var(--surface-solid);
+        border-radius: var(--radius-xl);
+        border: 1px solid var(--border);
+        box-shadow: var(--shadow-card);
+        padding: clamp(28px, 5vw, 56px);
+        display: grid;
+        grid-template-columns: 0.88fr 1.12fr;
+        gap: 52px;
+        align-items: start;
+      }
+
+      .rsvp-info h2 {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: clamp(28px, 3.8vw, 42px);
+        font-weight: 800;
+        line-height: 1.15;
+        margin: 0 0 16px;
+      }
+
+      .rsvp-info p {
         font-size: 16px;
         line-height: 1.75;
         color: var(--sub);
+        margin: 0 0 28px;
       }
-      .postcard {
-        background: var(--card);
-        border: 1px solid var(--rule);
-        padding: clamp(28px, 4.5vw, 48px);
-        box-shadow: 0 18px 45px rgba(28, 25, 23, 0.05);
+
+      .rsvp-perks {
+        display: grid;
+        gap: 14px;
       }
+
+      .perk-item {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        padding: 14px 16px;
+        background: var(--bg);
+        border-radius: 16px;
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--ink);
+      }
+
+      .perk-dot {
+        width: 32px;
+        height: 32px;
+        border-radius: 10px;
+        background: var(--brand-light);
+        color: var(--brand);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        flex-shrink: 0;
+      }
+
+      .rsvp-form {
+        background: var(--bg);
+        padding: clamp(24px, 3.5vw, 38px);
+        border-radius: var(--radius-lg);
+        border: 1px solid var(--border);
+      }
+
       .field {
-        margin-bottom: 26px;
+        margin-bottom: 22px;
       }
+
       .field label {
         display: block;
-        font-size: 11px;
-        font-weight: 600;
-        letter-spacing: 0.16em;
-        text-transform: uppercase;
-        color: var(--sub);
-        margin-bottom: 10px;
+        font-size: 13px;
+        font-weight: 700;
+        color: var(--ink);
+        margin-bottom: 8px;
       }
+
       .field input,
       .field textarea {
         width: 100%;
-        border: 1px solid var(--rule);
-        background: var(--paper);
-        padding: 15px 16px;
+        border: 1px solid var(--border-strong);
+        background: var(--surface-solid);
+        border-radius: 14px;
+        padding: 14px 16px;
         outline: 0;
         font-size: 15px;
         color: var(--ink);
-        transition: border-color 0.2s, background 0.2s;
+        transition: all 0.2s ease;
       }
+
       .field input:focus,
       .field textarea:focus {
-        border-color: var(--ink);
-        background: #fff;
+        border-color: var(--brand);
+        box-shadow: 0 0 0 4px rgba(234, 88, 12, 0.12);
       }
+
       .field textarea {
         resize: vertical;
-        min-height: 110px;
+        min-height: 105px;
       }
+
       .choice {
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 12px;
       }
+
       .choice label {
         position: relative;
         cursor: pointer;
         margin: 0;
       }
+
       .choice input {
         position: absolute;
         opacity: 0;
         pointer-events: none;
       }
+
       .choice span {
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
         text-align: center;
-        border: 1px solid var(--rule);
-        background: var(--paper);
-        padding: 15px 12px;
-        font-size: 13px;
-        font-weight: 500;
+        border: 1.5px solid var(--border-strong);
+        background: var(--surface-solid);
+        border-radius: 14px;
+        padding: 14px 12px;
+        font-size: 14px;
+        font-weight: 600;
         color: var(--sub);
-        letter-spacing: 0.02em;
-        transition: 0.2s;
+        transition: all 0.2s ease;
       }
+
       .choice input:checked + span {
         background: var(--navy);
-        color: var(--paper);
+        color: #fff;
         border-color: var(--navy);
+        box-shadow: 0 8px 20px rgba(15, 23, 42, 0.18);
       }
+
+      .quick-wishes {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        margin-top: 10px;
+      }
+
+      .wish-chip {
+        background: var(--surface-solid);
+        border: 1px solid var(--border-strong);
+        border-radius: 999px;
+        padding: 6px 12px;
+        font-size: 12px;
+        color: var(--sub);
+        transition: all 0.2s;
+      }
+
+      .wish-chip:hover {
+        border-color: var(--brand);
+        color: var(--brand);
+        background: #fff7ed;
+      }
+
       .send {
         width: 100%;
-        padding: 17px;
-        border: 1px solid var(--ink);
-        background: var(--ink);
-        color: var(--paper);
-        font-size: 12px;
-        font-weight: 600;
-        letter-spacing: 0.18em;
-        text-transform: uppercase;
-        transition: 0.25s;
+        height: 52px;
+        border: none;
+        border-radius: 999px;
+        background: linear-gradient(135deg, #ea580c 0%, #d97706 100%);
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700;
+        box-shadow: 0 12px 26px -6px rgba(234, 88, 12, 0.45);
+        transition: all 0.25s ease;
       }
+
       .send:hover {
-        background: var(--accent);
-        border-color: var(--accent);
+        transform: translateY(-1px);
+        box-shadow: 0 16px 32px -6px rgba(234, 88, 12, 0.55);
       }
+
       .send:disabled {
-        opacity: 0.6;
+        opacity: 0.65;
         cursor: wait;
       }
+
       .feedback {
-        font-size: 13px;
+        font-size: 13.5px;
+        font-weight: 500;
         color: var(--sub);
         margin: 14px 0 0;
         line-height: 1.5;
         min-height: 20px;
+        text-align: center;
       }
+
       .feedback.error {
-        color: #b42318;
+        color: #dc2626;
       }
+
       .feedback.ok {
         color: var(--green);
       }
 
-      /* Ending Colophon */
-      .colophon {
+      /* Closing Celebration Banner */
+      .closing {
         text-align: center;
-        padding: 110px 24px 96px;
-        border-top: 1px solid var(--rule);
-        background: var(--card);
+        padding: 72px 24px 56px;
       }
-      .colophon img {
-        height: 44px;
+
+      .closing img {
+        height: 42px;
         width: auto;
         object-fit: contain;
-        margin: 0 auto 28px;
+        margin: 0 auto 20px;
         display: block;
       }
-      .colophon h2 {
-        font-family: "Playfair Display", Georgia, serif;
-        font-size: clamp(44px, 7.2vw, 88px);
-        font-weight: 400;
-        line-height: 1.04;
-        margin: 0;
+
+      .closing h2 {
+        font-family: "Plus Jakarta Sans", sans-serif;
+        font-size: clamp(32px, 5vw, 54px);
+        font-weight: 800;
+        letter-spacing: -0.02em;
+        margin: 0 0 12px;
       }
-      .colophon h2 em {
-        font-style: italic;
-        color: var(--accent);
-      }
-      .colophon p {
+
+      .closing h2 span {
         font-family: "Cormorant Garamond", Georgia, serif;
-        font-size: 22px;
-        line-height: 1.6;
-        color: var(--sub);
-        max-width: 480px;
-        margin: 22px auto 28px;
+        font-style: italic;
+        color: var(--brand);
+        font-weight: 600;
       }
+
+      .closing p {
+        font-size: 17px;
+        color: var(--sub);
+        max-width: 460px;
+        margin: 0 auto 24px;
+        line-height: 1.65;
+      }
+
       footer {
-        border-top: 2px solid var(--ink);
-        padding: 26px 0 34px;
+        border-top: 1px solid var(--border-strong);
+        padding: 24px 0 36px;
         display: flex;
         justify-content: space-between;
-        gap: 15px;
-        color: var(--sub);
-        font-size: 11px;
-        letter-spacing: 0.12em;
-        text-transform: uppercase;
+        align-items: center;
+        gap: 16px;
+        color: var(--muted);
+        font-size: 13px;
       }
 
       .fade {
-        animation: rise 0.85s both;
+        animation: rise 0.8s cubic-bezier(0.22, 1, 0.36, 1) both;
       }
+
       @keyframes rise {
         from {
           opacity: 0;
-          transform: translateY(16px);
+          transform: translateY(18px);
         }
         to {
           opacity: 1;
@@ -724,52 +1055,37 @@
         }
       }
 
-      @media (max-width: 820px) {
+      @media (max-width: 900px) {
         .wrap {
-          width: min(100% - 32px, 1080px);
+          width: min(100% - 32px, 1140px);
         }
-        .masthead-inner {
-          grid-template-columns: 1fr auto;
-        }
-        .masthead-meta {
+        .nav-links {
           display: none;
         }
         .hero {
-          padding: 40px 0 64px;
+          padding: 32px 0 56px;
         }
-        .editorial-stage {
+        .hero-grid,
+        .story-grid,
+        .bento-details,
+        .rsvp-container {
           grid-template-columns: 1fr;
-          gap: 24px;
-          max-width: 370px;
         }
-        .stage-wing,
-        .stage-wing.right {
+        .hero-grid {
+          gap: 40px;
+        }
+        .floating-sticker {
+          left: 12px;
+          bottom: 92px;
+        }
+        .countdown-wrap {
+          padding: 28px 22px;
+          justify-content: center;
           text-align: center;
-          padding: 16px 0;
         }
-        .details-grid {
-          grid-template-columns: 1fr;
-        }
-        .detail-col,
-        .detail-col + .detail-col {
-          border-left: 0;
-          border-bottom: 1px solid var(--rule);
-          padding: 28px 0;
-        }
-        .count-row {
-          grid-template-columns: repeat(2, 1fr);
+        .cd-boxes {
           width: 100%;
-        }
-        .count-item:nth-child(3) {
-          border-left: 0;
-          border-top: 1px solid rgba(250, 246, 240, 0.2);
-        }
-        .count-item:nth-child(4) {
-          border-top: 1px solid rgba(250, 246, 240, 0.2);
-        }
-        .rsvp-layout {
-          grid-template-columns: 1fr;
-          gap: 32px;
+          grid-template-columns: repeat(4, 1fr);
         }
         .choice {
           grid-template-columns: 1fr;
@@ -779,234 +1095,298 @@
           text-align: center;
         }
       }
+
+      /* ---- Motion & polish ---- */
+      .progress-bar{position:fixed;top:0;left:0;height:3px;width:100%;transform-origin:0 50%;transform:scaleX(0);background:linear-gradient(90deg,#ea580c,#f59e0b);z-index:100}
+      .live-dot{width:7px;height:7px;border-radius:50%;background:#ea580c;display:inline-block;position:relative}
+      .live-dot::after{content:"";position:absolute;inset:0;border-radius:50%;background:#ea580c;animation:ping 1.8s ease-out infinite}
+      @keyframes ping{0%{transform:scale(1);opacity:.7}100%{transform:scale(3.2);opacity:0}}
+      body::before,body::after{content:"";position:fixed;z-index:-1;border-radius:50%;filter:blur(70px);pointer-events:none}
+      body::before{width:380px;height:380px;background:rgba(251,146,60,.22);top:8%;left:-80px;animation:drift 18s ease-in-out infinite alternate}
+      body::after{width:320px;height:320px;background:rgba(245,158,11,.16);bottom:6%;right:-60px;animation:drift 22s ease-in-out infinite alternate-reverse}
+      @keyframes drift{to{transform:translate(70px,-50px) scale(1.15)}}
+      .hero-title .line{display:block;overflow:hidden;padding-bottom:.08em}
+      .hero-title .line>span{display:inline-block;animation:slideUp .9s cubic-bezier(.22,1,.36,1) both}
+      .hero-title .line:nth-child(2)>span{animation-delay:.12s}
+      @keyframes slideUp{from{transform:translateY(110%)}to{transform:none}}
+      .serif-italic{background:linear-gradient(90deg,#ea580c,#f59e0b,#ea580c);background-size:200% 100%;-webkit-background-clip:text;background-clip:text;color:transparent!important;animation:shine 5s linear infinite}
+      @keyframes shine{to{background-position:-200% 0}}
+      .portrait-card{transform-style:preserve-3d;transition:transform .25s ease-out;will-change:transform}
+      .portrait-img-box::after{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 35%,rgba(255,255,255,.35) 50%,transparent 65%);transform:translateX(-120%);animation:sweep 6s ease-in-out 1.6s infinite;pointer-events:none}
+      @keyframes sweep{0%,60%{transform:translateX(-120%)}100%{transform:translateX(120%)}}
+      .portrait-img-box img{animation:imgReveal 1.3s cubic-bezier(.22,1,.36,1) both}
+      @keyframes imgReveal{from{clip-path:inset(0 0 100% 0);transform:scale(1.15)}to{clip-path:inset(0);transform:scale(1)}}
+      .floating-sticker{animation:bob 5s ease-in-out infinite}
+      @keyframes bob{50%{transform:translateY(-10px)}}
+      .btn-primary,.send{position:relative;overflow:hidden}
+      .btn-primary::after,.send::after{content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;background:linear-gradient(90deg,transparent,rgba(255,255,255,.4),transparent);transform:skewX(-20deg);transition:left .7s}
+      .btn-primary:hover::after,.send:hover::after{left:130%}
+      .reveal{opacity:0;transform:translateY(34px);transition:opacity .9s cubic-bezier(.22,1,.36,1),transform .9s cubic-bezier(.22,1,.36,1);transition-delay:var(--d,0s)}
+      .reveal.in{opacity:1;transform:none}
+      .bento-card.reveal.in{transition:opacity .9s cubic-bezier(.22,1,.36,1),transform .25s ease,box-shadow .25s ease;transition-delay:0s}
+      .bento-icon{transition:transform .35s ease,background .35s ease,color .35s ease}
+      .bento-card:hover .bento-icon{transform:rotate(-8deg) scale(1.1);background:var(--brand);color:#fff}
+      .bento-card.featured:hover .bento-icon{background:#fb923c;color:#0f172a}
+      .cd-box b.flip{animation:flip .45s ease}
+      @keyframes flip{0%{transform:translateY(-35%);opacity:0}100%{transform:none;opacity:1}}
+      .perk-item{transition:transform .25s ease,background .25s ease}
+      .perk-item:hover{transform:translateX(6px);background:var(--brand-light)}
+      .nav-links a{position:relative}
+      .nav-links a::after{content:"";position:absolute;left:0;bottom:-4px;height:2px;width:100%;background:var(--brand);transform:scaleX(0);transform-origin:left;transition:transform .3s}
+      .nav-links a:hover::after{transform:scaleX(1)}
+      @media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+      .att-group .ant-radio-button-wrapper{height:50px;line-height:48px;border-radius:14px!important;border-inline-start-width:1px;margin-right:12px;font-weight:600}
+      .att-group .ant-radio-button-wrapper:last-child{margin-right:0}
+      .att-group .ant-radio-button-wrapper::before{display:none!important}
+      .ant-form-item-label>label{font-weight:700;font-size:13px}
+      .wish-tag{cursor:pointer;border-radius:999px!important;padding:3px 12px;background:#fff;transition:all .2s}
+      .wish-tag:hover{color:#ea580c;border-color:#ea580c;background:#fff7ed}
+      .send-btn{height:52px!important;border:none!important;font-weight:700;background:linear-gradient(135deg,#ea580c,#d97706)!important;box-shadow:0 12px 26px -6px rgba(234,88,12,.45)}
+      .send-btn:hover{transform:translateY(-1px);filter:brightness(1.05)}
+      @media (max-width:900px){.att-group{flex-direction:column}.att-group .ant-radio-button-wrapper{margin:0 0 10px!important}}
     </style>
   </head>
   <body>
-    <header class="masthead wrap" id="home">
-      <div class="masthead-inner">
-        <div class="masthead-meta">Vol. 2026 &nbsp;·&nbsp; Graduation Issue</div>
-        <a class="masthead-brand" href="#home">
+    <div class="progress-bar" id="progress"></div>
+    <div class="topbar-wrap">
+      <header class="topbar">
+        <a class="brand" href="#home">
           <img src="./access/logoFPT.png" alt="FPT University" />
-          <span class="masthead-divider" aria-hidden="true"></span>
-          <span class="masthead-title">Mai Quốc Hiệp</span>
+          <span class="brand-sep" aria-hidden="true"></span>
+          <span class="brand-name">Mai Quốc Hiệp</span>
         </a>
-        <a class="masthead-action" href="#reply">Xác nhận tham dự ↗</a>
-      </div>
-    </header>
+        <nav class="nav-links" aria-label="Điều hướng">
+          <a href="#invite">Thư mời</a>
+          <a href="#schedule">Thời gian &amp; Địa điểm</a>
+          <a href="#reply">Gửi lời chúc</a>
+        </nav>
+        <a class="nav-cta" href="#reply">Xác nhận tham dự ↗</a>
+      </header>
+    </div>
 
-    <main>
+    <main id="home">
+      <!-- Asymmetric Modern Hero -->
       <section class="hero wrap">
-        <div class="issue-tag fade">
-          FPT University Ho Chi Minh City &nbsp;·&nbsp; Class of 2026
-        </div>
-        <h1 class="fade" style="animation-delay: 0.08s">
-          One More <em>Chapter.</em>
-        </h1>
-
-        <div class="editorial-stage fade" style="animation-delay: 0.14s">
-          <div class="stage-wing">
-            <span class="wing-kicker">Tân cử nhân</span>
-            <div class="wing-main">Mai Quốc Hiệp</div>
-            <div class="wing-sub">FPT University HCMC</div>
-          </div>
-
-          <div class="arch-frame">
-            <div class="arch-inner">
-              <img
-                src="./access/SS170645_1.jpg"
-                alt="Mai Quốc Hiệp — Lễ tốt nghiệp Đại học FPT 2026"
-              />
+        <div class="hero-grid">
+          <div class="hero-copy fade">
+            <div class="badge-pill">
+              <span class="badge-dot"></span>
+              <span>Lễ Tốt Nghiệp · Class of 2026</span>
             </div>
-            <div class="arch-caption">
-              <span>Saigon, Autumn 2026</span>
-              <span>No. 07—11</span>
+
+            <h1 class="hero-title">
+              <span class="line"><span>Khép lại giảng đường,</span></span>
+              <span class="line"><span>mở ra <span class="serif-italic">hành trình mới.</span></span></span>
+            </h1>
+
+            <p class="hero-lead">
+              Thân mời bạn đến chung vui, lưu lại những khung hình kỷ niệm rực rỡ
+              nhất cùng <strong>Mai Quốc Hiệp</strong> trong buổi lễ tốt nghiệp
+              tại Đại học FPT TP. Hồ Chí Minh.
+            </p>
+
+            <div class="hero-highlights">
+              <div class="hl-card">
+                <span class="hl-label">Ngày lễ</span>
+                <div class="hl-val">Thứ Bảy, 07.11</div>
+              </div>
+              <div class="hl-card">
+                <span class="hl-label">Thời gian</span>
+                <div class="hl-val accent">16:30 Chiều</div>
+              </div>
+              <div class="hl-card">
+                <span class="hl-label">Địa điểm</span>
+                <div class="hl-val">ĐH FPT TP.HCM</div>
+              </div>
+            </div>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#reply">
+                Xác nhận tham dự &amp; Gửi lời chúc
+              </a>
+              <a class="btn btn-secondary" href="#schedule">
+                Xem lịch trình &amp; Bản đồ
+              </a>
             </div>
           </div>
 
-          <div class="stage-wing right">
-            <span class="wing-kicker">Lễ tốt nghiệp</span>
-            <div class="wing-main">Thứ Bảy, 07.11</div>
-            <div class="wing-sub">16:00 Chiều · TP. Thủ Đức</div>
+          <div class="portrait-showcase fade" style="animation-delay: 0.12s">
+            <div class="ambient-backdrop" aria-hidden="true"></div>
+            <div class="portrait-card">
+              <div class="portrait-img-box">
+                <span class="floating-tag"><i class="live-dot"></i>Tân cử nhân 2026</span>
+                <img
+                  src="./access/SS170645_1.jpg"
+                  alt="Mai Quốc Hiệp — Lễ tốt nghiệp Đại học FPT 2026"
+                />
+              </div>
+              <div class="portrait-footer">
+                <div>
+                  <div class="grad-name">Mai Quốc Hiệp</div>
+                  <div class="grad-school">FPT University HCMC</div>
+                </div>
+                <div class="grad-year-chip">07.11.2026</div>
+              </div>
+            </div>
+
+            <div class="floating-sticker">
+              <div class="sticker-time">16:30</div>
+              <div class="sticker-meta">
+                <strong>Thứ Bảy · 07/11/2026</strong><br />
+                Đại học FPT TP.HCM
+              </div>
+            </div>
           </div>
-        </div>
-
-        <p class="hero-deck fade" style="animation-delay: 0.2s">
-          “Một hành trình khép lại nơi giảng đường. Một chương mới bắt đầu — và
-          khoảnh khắc ấy sẽ trọn vẹn hơn rất nhiều khi có bạn ở đó.”
-        </p>
-
-        <div class="hero-buttons fade" style="animation-delay: 0.26s">
-          <a class="btn-ed primary" href="#invite">Đọc thư mời</a>
-          <a class="btn-ed outline" href="#reply">Gửi lời chúc</a>
         </div>
       </section>
 
-      <section class="letter-section" id="invite">
-        <div class="wrap">
-          <article class="letter-card">
-            <span class="section-num">I. Thư ngỏ</span>
-            <h2 class="letter-title">
-              Có bạn ở đó,<br />niềm vui trọn vẹn hơn.
-            </h2>
-            <div class="letter-body">
-              <p class="dropcap">
-                Sau những tháng ngày học tập, trải nghiệm và trưởng thành tại
+      <!-- Warm Invitation Story Card -->
+      <section class="story-section wrap reveal" id="invite">
+        <article class="story-card">
+          <div class="story-grid">
+            <div>
+              <span class="section-kicker">Thư mời thân mật</span>
+              <h2 class="story-heading">
+                Có bạn ở đó,<br />niềm vui sẽ trọn vẹn hơn rất nhiều.
+              </h2>
+              <blockquote class="story-quote">
+                “Thanh xuân đẹp nhất là khi những cột mốc đáng nhớ đều có sự hiện
+                diện của những người thân thương.”
+              </blockquote>
+            </div>
+
+            <div class="story-content">
+              <p>
+                Sau những năm tháng học tập, trải nghiệm và trưởng thành tại
                 <strong>FPT University HCMC</strong>, mình —
-                <strong>Mai Quốc Hiệp</strong> — sắp chính thức bước qua một cột
-                mốc thật đặc biệt của tuổi trẻ: lễ tốt nghiệp đại học.
+                <strong>Mai Quốc Hiệp</strong> — sắp chính thức bước qua một dấu
+                mốc thật đặc biệt của tuổi trẻ: Lễ tốt nghiệp đại học.
               </p>
               <p>
-                Mình trân trọng mời bạn đến chung vui, trò chuyện, lưu lại vài
-                tấm hình kỷ niệm và cùng mình đánh dấu ngày đáng nhớ này. Sự
-                hiện diện của bạn chính là món quà ý nghĩa nhất dành cho Hiệp.
+                Mình trân trọng mời bạn dành chút thời gian cuối tuần đến chung
+                vui, trò chuyện và chụp cùng mình vài tấm hình kỷ niệm vào lúc
+                <strong>16:30 chiều Thứ Bảy, ngày 07.11.2026</strong>. Sự hiện
+                diện của bạn chính là món quà ý nghĩa nhất dành cho Hiệp!
               </p>
-            </div>
-            <div class="letter-sign">
-              <div class="letter-sign-meta">
-                TP. Hồ Chí Minh &nbsp;·&nbsp; Tháng 11, 2026
+
+              <div class="story-sign">
+                <span class="sign-label">TP. Hồ Chí Minh · Tháng 11, 2026</span>
+                <div class="signature">Mai Quốc Hiệp</div>
               </div>
-              <div class="signature">Mai Quốc Hiệp</div>
             </div>
-          </article>
-        </div>
+          </div>
+        </article>
       </section>
 
-      <section class="details-section wrap">
-        <div class="details-header">
-          <div>
-            <span class="section-num">II. Lịch trình lễ tốt nghiệp</span>
-            <h2>Thời gian &amp; Địa điểm</h2>
-          </div>
-          <a class="ed-link" id="calendar" href="#">
-            + Lưu sự kiện vào Google Calendar ↗
-          </a>
+      <!-- Bento Schedule & Countdown -->
+      <section class="ticket-section wrap" id="schedule">
+        <div class="section-head reveal">
+          <span class="section-kicker">Lịch trình sự kiện</span>
+          <h2>Thời gian &amp; Địa điểm</h2>
+          <p>
+            Hãy lưu lại lịch hẹn để chúng mình có những bức ảnh thật đẹp cùng
+            nhau nhé.
+          </p>
         </div>
 
-        <div class="details-grid">
-          <div class="detail-col">
-            <span class="detail-index">01.</span>
-            <span class="detail-label">Ngày tổ chức</span>
-            <div class="detail-figure">Thứ Bảy<br />07.11.2026</div>
-            <div class="detail-note">
-              Một chiều cuối tuần mùa thu đáng nhớ tại khuôn viên trường.
+        <div class="bento-details">
+          <div class="bento-card reveal">
+            <div>
+              <div class="bento-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="5" width="17" height="15" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg></div>
+              <span class="bento-label">Ngày tổ chức</span>
+              <div class="bento-value">Thứ Bảy<br />07.11.2026</div>
+              <p class="bento-desc">
+                Một buổi chiều cuối tuần thật đẹp tại khuôn viên xanh của trường
+                Đại học FPT.
+              </p>
             </div>
+            <a class="bento-action" id="calendar" href="#">
+              + Lưu vào Google Calendar ↗
+            </a>
           </div>
 
-          <div class="detail-col">
-            <span class="detail-index">02.</span>
-            <span class="detail-label">Khung giờ</span>
-            <div class="detail-figure">16:00<br />Chiều</div>
-            <div class="detail-note">
-              Bạn có thể ghé sớm để thoải mái gặp gỡ, trò chuyện và chụp ảnh
-              cùng Hiệp.
+          <div class="bento-card featured reveal" style="--d:.12s">
+            <div>
+              <div class="bento-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M12 7.5V12l3 2"/></svg></div>
+              <span class="bento-label">Khung giờ đón khách</span>
+              <div class="bento-value">16:30 Chiều</div>
+              <p class="bento-desc">
+                Thời điểm nắng chiều dịu nhẹ, lý tưởng nhất để gặp gỡ, trò chuyện
+                và chụp hình kỷ niệm cùng Hiệp.
+              </p>
             </div>
+            <a class="bento-action" href="#reply">Báo cho Hiệp biết bạn đến →</a>
           </div>
 
-          <div class="detail-col">
-            <span class="detail-index">03.</span>
-            <span class="detail-label">Địa điểm</span>
-            <div class="detail-figure">Đại học FPT<br />TP. Hồ Chí Minh</div>
-            <div class="detail-note">
-              Lô E2a-7, Đường D1, Khu Công nghệ cao, TP. Thủ Đức, TP.HCM.
+          <div class="bento-card reveal">
+            <div>
+              <div class="bento-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-6.5-5.6-6.5-11a6.5 6.5 0 0 1 13 0c0 5.4-6.5 11-6.5 11z"/><circle cx="12" cy="10" r="2.3"/></svg></div>
+              <span class="bento-label">Địa điểm</span>
+              <div class="bento-value">Đại học FPT<br />TP. Hồ Chí Minh</div>
+              <p class="bento-desc">
+                Lô E2a-7, Đường D1, Đại học FPT TP. Hồ Chí Minh.
+              </p>
             </div>
             <a
-              class="ed-link"
+              class="bento-action"
               href="https://www.google.com/maps/search/?api=1&query=Đại%20học%20FPT%20TP.HCM"
               target="_blank"
               rel="noopener"
-              >Xem chỉ đường trên bản đồ ↗</a
             >
+              Mở chỉ đường trên Google Maps ↗
+            </a>
+          </div>
+        </div>
+
+        <!-- Countdown Bar -->
+        <div class="countdown-wrap reveal" aria-label="Đếm ngược tới lễ tốt nghiệp">
+          <div class="cd-text">
+            <h3>Đếm ngược đến giờ hẹn 16:30 · 07.11.2026</h3>
+            <p>Chỉ còn một chút thời gian nữa là tới khoảnh khắc đặc biệt này!</p>
+          </div>
+          <div class="cd-boxes">
+            <div class="cd-box"><b id="days">—</b><span>Ngày</span></div>
+            <div class="cd-box"><b id="hours">—</b><span>Giờ</span></div>
+            <div class="cd-box"><b id="minutes">—</b><span>Phút</span></div>
+            <div class="cd-box"><b id="seconds">—</b><span>Giây</span></div>
           </div>
         </div>
       </section>
 
-      <section class="countdown-section">
-        <div class="wrap">
-          <span class="section-num">III. Đếm ngược tới giờ lễ</span>
-          <h2>Hẹn gặp bạn vào <em>chiều Thứ Bảy ấy.</em></h2>
-          <p class="countdown-sub">
-            16:00 · Ngày 07 tháng 11 năm 2026 · FPT University HCMC
-          </p>
-          <div class="count-row" aria-label="Đếm ngược">
-            <div class="count-item"><b id="days">—</b><span>Ngày</span></div>
-            <div class="count-item"><b id="hours">—</b><span>Giờ</span></div>
-            <div class="count-item"><b id="minutes">—</b><span>Phút</span></div>
-            <div class="count-item"><b id="seconds">—</b><span>Giây</span></div>
-          </div>
-        </div>
-      </section>
-
+      <!-- Guestbook & RSVP -->
       <section class="rsvp-section wrap" id="reply">
-        <div class="rsvp-layout">
-          <div>
-            <span class="section-num">IV. Sổ lưu bút &amp; Xác nhận</span>
-            <h2 class="rsvp-title">Mình rất mong<br />được gặp bạn.</h2>
-            <p class="rsvp-intro">
-              Hãy cho Hiệp biết bạn có thể sắp xếp tham dự không nhé. Nếu bận
-              không thể ghé được, đôi dòng nhắn gửi của bạn tại đây cũng sẽ là
-              kỷ niệm thật đẹp mà mình luôn trân quý.
+        <div class="rsvp-container reveal">
+          <div class="rsvp-info">
+            <span class="section-kicker">Xác nhận &amp; Lưu bút</span>
+            <h2>Hẹn gặp bạn trong ngày vui của Hiệp!</h2>
+            <p>
+              Hãy cho Hiệp biết bạn có thể sắp xếp ghé tham dự được không nhé.
+              Nếu bận không thể đến trực tiếp, đôi dòng lời chúc của bạn tại đây
+              cũng sẽ là kỷ niệm vô cùng đáng quý.
             </p>
-          </div>
 
-          <form class="postcard" id="rsvpForm">
-            <div class="field">
-              <label for="guest">Tên của bạn *</label>
-              <input
-                id="guest"
-                name="guest"
-                maxlength="80"
-                required
-                placeholder="Nhập tên của bạn..."
-                autocomplete="name"
-              />
-            </div>
-            <div class="field">
-              <label>Bạn sẽ tham dự chứ? *</label>
-              <div class="choice">
-                <label>
-                  <input
-                    type="radio"
-                    name="attendance"
-                    value="yes"
-                    required
-                    checked
-                  />
-                  <span>Mình sẽ đến chung vui</span>
-                </label>
-                <label>
-                  <input type="radio" name="attendance" value="no" />
-                  <span>Tiếc quá, mình không thể</span>
-                </label>
+            <div class="rsvp-perks">
+              <div class="perk-item">
+                <span class="perk-dot">01</span>
+                <span>Chụp ảnh kỷ niệm lấy liền &amp; lưu giữ thanh xuân</span>
+              </div>
+              <div class="perk-item">
+                <span class="perk-dot">02</span>
+                <span>16:30 Chiều Thứ Bảy · 07.11.2026 tại ĐH FPT TP.HCM</span>
               </div>
             </div>
-            <div class="field">
-              <label for="wish">Lời nhắn dành cho Hiệp</label>
-              <textarea
-                id="wish"
-                name="wish"
-                maxlength="1000"
-                placeholder="Viết vài dòng lưu bút cho Hiệp nhé..."
-              ></textarea>
-            </div>
-            <button class="send" id="submitBtn" type="submit">
-              Gửi xác nhận &amp; lời chúc
-            </button>
-            <div
-              class="feedback"
-              id="feedback"
-              role="status"
-              aria-live="polite"
-            ></div>
-          </form>
+          </div>
+
+          <div class="rsvp-form" id="rsvpRoot"></div>
         </div>
       </section>
 
-      <section class="colophon">
+      <section class="closing wrap reveal">
         <img src="./access/logoFPT.png" alt="FPT University" />
-        <h2>See you <em>there.</em></h2>
+        <h2>Hẹn gặp lại bạn <span>nhé!</span></h2>
         <p>
-          Cảm ơn bạn đã là một phần thanh xuân thật đẹp của mình. Hẹn gặp lại
-          bạn trong ngày tốt nghiệp!
+          Cảm ơn bạn vì đã luôn đồng hành và là một phần thanh xuân thật đẹp của
+          mình.
         </p>
         <div class="signature">Mai Quốc Hiệp</div>
       </section>
@@ -1014,14 +1394,29 @@
 
     <footer class="wrap">
       <span>© 2026 Mai Quốc Hiệp</span>
-      <span>FPT University HCMC · The Graduation Issue</span>
+      <span>Lễ Tốt Nghiệp Đại học FPT TP.HCM · 07.11.2026 · 16:30</span>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/react@18.3.1/umd/react.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.13/dayjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.13/plugin/customParseFormat.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.13/plugin/advancedFormat.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.13/plugin/localeData.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.13/plugin/weekday.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.13/plugin/weekOfYear.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1.11.13/plugin/weekYear.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/antd@5.22.0/dist/antd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/antd@5.22.0/locale/vi_VN.js"></script>
     <script src="./config.js"></script>
     <script>
       (function () {
-        const target = new Date("2026-11-07T16:00:00+07:00").getTime();
+        const target = new Date("2026-11-07T16:30:00+07:00").getTime();
         const $ = (id) => document.getElementById(id);
+        function set(id, v) {
+          const el = $(id);
+          if (el.textContent !== v) { el.textContent = v; el.classList.remove("flip"); void el.offsetWidth; el.classList.add("flip"); }
+        }
         function tick() {
           let n = Math.max(0, Math.floor((target - Date.now()) / 1000));
           const d = Math.floor(n / 86400);
@@ -1029,15 +1424,40 @@
           const h = Math.floor(n / 3600);
           n %= 3600;
           const m = Math.floor(n / 60);
-          $("days").textContent = String(d);
-          $("hours").textContent = String(h).padStart(2, "0");
-          $("minutes").textContent = String(m).padStart(2, "0");
-          $("seconds").textContent = String(n % 60).padStart(2, "0");
+          set("days", String(d));
+          set("hours", String(h).padStart(2, "0"));
+          set("minutes", String(m).padStart(2, "0"));
+          set("seconds", String(n % 60).padStart(2, "0"));
         }
         tick();
         setInterval(tick, 1000);
-        const cstart = "20261107T090000Z",
-          cend = "20261107T120000Z";
+
+        // Scroll progress + reveal + tilt
+        const bar = $("progress");
+        addEventListener("scroll", () => {
+          const h = document.documentElement;
+          bar.style.transform = "scaleX(" + h.scrollTop / (h.scrollHeight - h.clientHeight || 1) + ")";
+        }, { passive: true });
+        const io = new IntersectionObserver((es) => es.forEach((e) => {
+          if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+        }), { threshold: 0.12 });
+        document.querySelectorAll(".reveal").forEach((el, i) => {
+          if (!el.style.getPropertyValue("--d")) el.style.setProperty("--d", (i % 3) * 0.08 + "s");
+          io.observe(el);
+        });
+        const card = document.querySelector(".portrait-card");
+        if (card && matchMedia("(hover:hover)").matches) {
+          card.addEventListener("mousemove", (e) => {
+            const r = card.getBoundingClientRect();
+            const x = (e.clientX - r.left) / r.width - 0.5, y = (e.clientY - r.top) / r.height - 0.5;
+            card.style.transform = "perspective(900px) rotateY(" + x * 9 + "deg) rotateX(" + -y * 9 + "deg)";
+          });
+          card.addEventListener("mouseleave", () => (card.style.transform = ""));
+        }
+
+        // 16:30+07:00 = 09:30 UTC
+        const cstart = "20261107T093000Z",
+          cend = "20261107T123000Z";
         $("calendar").href =
           "https://calendar.google.com/calendar/render?action=TEMPLATE&text=" +
           encodeURIComponent("Lễ tốt nghiệp Mai Quốc Hiệp") +
@@ -1046,31 +1466,26 @@
           "/" +
           cend +
           "&details=" +
-          encodeURIComponent("Hẹn gặp bạn trong lễ tốt nghiệp của Hiệp!") +
+          encodeURIComponent(
+            "Hẹn gặp bạn lúc 16:30 chiều Thứ Bảy (07/11/2026) trong lễ tốt nghiệp của Hiệp tại Đại học FPT TP.HCM!",
+          ) +
           "&location=" +
           encodeURIComponent("Đại học FPT TP. Hồ Chí Minh");
-        const form = $("rsvpForm");
-        let inFlight = false;
-        form.addEventListener("submit", async (e) => {
-          e.preventDefault();
-          if (inFlight) return;
-          const guest = $("guest").value.trim(),
-            wish = $("wish").value.trim(),
-            attendance = form.querySelector(
-              "input[name=attendance]:checked",
-            )?.value;
-          if (!guest || !attendance) {
-            show("Vui lòng nhập tên và chọn tham dự.", true);
-            return;
-          }
-          if (guest.length > 80 || wish.length > 1000) {
-            show("Nội dung quá dài.", true);
-            return;
-          }
+
+        // ---------- Ant Design RSVP form ----------
+        const { ConfigProvider, Form, Input, Radio, Button, Tag, App: AntApp, theme } = antd;
+        const h = React.createElement;
+        const WISHES = [
+          "Chúc mừng tân cử nhân Mai Quốc Hiệp! Chúc bạn luôn vững bước và gặt hái thật nhiều thành công trên chặng đường mới!",
+          "Hẹn gặp Hiệp lúc 16:30 chiều Thứ Bảy nhé, chuẩn bị tinh thần chụp thật nhiều ảnh đẹp nha!",
+        ];
+
+        async function submitRsvp(values) {
+          const guest = (values.guest || "").trim(),
+            wish = (values.wish || "").trim(),
+            attendance = values.attendance;
           const payload = {
-            timestamp: new Date().toLocaleString("vi-VN", {
-              timeZone: "Asia/Ho_Chi_Minh",
-            }),
+            timestamp: new Date().toLocaleString("vi-VN", { timeZone: "Asia/Ho_Chi_Minh" }),
             guest_name: guest,
             attendance: attendance === "yes" ? "Có tham dự" : "Không tham dự",
             attendance_code: attendance,
@@ -1083,49 +1498,29 @@
 
           if (!sheetUrl && (!supabaseUrl || !supabaseKey)) {
             const msg =
-              "Xác nhận tham dự lễ tốt nghiệp Mai Quốc Hiệp\nTên: " +
-              guest +
-              "\nTham dự: " +
-              (attendance === "yes" ? "Có" : "Không") +
-              "\nLời chúc: " +
-              (wish || "(không có)");
+              "Xác nhận tham dự lễ tốt nghiệp Mai Quốc Hiệp (16:30 · 07/11/2026)\nTên: " + guest +
+              "\nTham dự: " + (attendance === "yes" ? "Có" : "Không") +
+              "\nLời chúc: " + (wish || "(không có)");
             if (navigator.share) {
               try {
-                await navigator.share({
-                  title: "Lời nhắn gửi Hiệp",
-                  text: msg,
-                });
-                show(
-                  "Đã mở bảng chia sẻ. Hãy chọn người nhận để hoàn tất.",
-                  false,
-                );
-                return;
+                await navigator.share({ title: "Lời nhắn gửi Hiệp", text: msg });
+                return { ok: true, text: "Đã mở bảng chia sẻ. Hãy chọn người nhận để hoàn tất.", keep: true };
               } catch (err) {
-                if (err.name === "AbortError") return;
+                if (err.name === "AbortError") return { ok: null };
               }
             }
             try {
               await navigator.clipboard.writeText(msg);
-              show("Đã sao chép nội dung. Hãy dán và gửi cho Hiệp nhé.", false);
+              return { ok: true, text: "Đã sao chép nội dung. Hãy dán và gửi cho Hiệp nhé.", keep: true };
             } catch {
-              show(
-                "Chưa kết nối cơ sở dữ liệu. Vui lòng sao chép lời nhắn và gửi trực tiếp cho Hiệp.",
-                true,
-              );
+              return { ok: false, text: "Chưa kết nối cơ sở dữ liệu. Vui lòng sao chép lời nhắn và gửi trực tiếp cho Hiệp." };
             }
-            return;
           }
-
-          inFlight = true;
-          $("submitBtn").disabled = true;
-          $("submitBtn").textContent = "Đang gửi…";
           try {
             if (sheetUrl) {
               const res = await fetch(sheetUrl, {
                 method: "POST",
-                headers: {
-                  "Content-Type": "text/plain;charset=utf-8",
-                },
+                headers: { "Content-Type": "text/plain;charset=utf-8" },
                 body: JSON.stringify(payload),
               });
               if (!res.ok) throw new Error("HTTP " + res.status);
@@ -1138,29 +1533,65 @@
                   Authorization: "Bearer " + supabaseKey,
                   Prefer: "return=minimal",
                 },
-                body: JSON.stringify({
-                  guest_name: guest,
-                  attendance,
-                  message: wish,
-                }),
+                body: JSON.stringify({ guest_name: guest, attendance, message: wish }),
               });
               if (!res.ok) throw new Error("HTTP " + res.status);
             }
-            show("Đã gửi thành công. Cảm ơn bạn, hẹn gặp lại!", false);
-            form.reset();
-            form.querySelector("input[value=yes]").checked = true;
+            return { ok: true, text: "Đã gửi thành công. Cảm ơn bạn, hẹn gặp lại!" };
           } catch (err) {
-            show("Chưa gửi được. Vui lòng kiểm tra mạng và thử lại.", true);
-          } finally {
-            inFlight = false;
-            $("submitBtn").disabled = false;
-            $("submitBtn").textContent = "Gửi xác nhận & lời chúc";
+            return { ok: false, text: "Chưa gửi được. Vui lòng kiểm tra mạng và thử lại." };
           }
-        });
-        function show(message, error) {
-          $("feedback").textContent = message;
-          $("feedback").className = "feedback " + (error ? "error" : "ok");
         }
+
+        function RsvpForm() {
+          const [form] = Form.useForm();
+          const [loading, setLoading] = React.useState(false);
+          const [status, setStatus] = React.useState(null);
+          const { message } = AntApp.useApp();
+          const onFinish = async (values) => {
+            setLoading(true);
+            const r = await submitRsvp(values);
+            setLoading(false);
+            if (r.ok === null) return;
+            setStatus(r);
+            r.ok ? message.success(r.text) : message.error(r.text);
+            if (r.ok && !r.keep) form.resetFields();
+          };
+          return h(
+            Form,
+            { form, layout: "vertical", size: "large", requiredMark: false, initialValues: { attendance: "yes" }, onFinish },
+            h(Form.Item, { name: "guest", label: "Tên của bạn", rules: [{ required: true, whitespace: true, message: "Vui lòng nhập tên của bạn" }] },
+              h(Input, { maxLength: 80, placeholder: "Nhập tên của bạn...", autoComplete: "name", allowClear: true })),
+            h(Form.Item, { name: "attendance", label: "Bạn sẽ đến chung vui cùng Hiệp chứ?", rules: [{ required: true }] },
+              h(Radio.Group, { optionType: "button", buttonStyle: "solid", block: true, style: { display: "flex" }, className: "att-group" },
+                h(Radio.Button, { value: "yes", style: { flex: 1, textAlign: "center" } }, "Mình sẽ đến chung vui"),
+                h(Radio.Button, { value: "no", style: { flex: 1, textAlign: "center" } }, "Gửi lời chúc từ xa"))),
+            h(Form.Item, { label: "Lời nhắn dành cho Hiệp", style: { marginBottom: 12 } },
+              h(Form.Item, { name: "wish", noStyle: true },
+                h(Input.TextArea, { maxLength: 1000, showCount: true, autoSize: { minRows: 4, maxRows: 8 }, placeholder: "Viết vài dòng chúc mừng hoặc nhắn nhủ cho Hiệp nhé..." })),
+              h("div", { className: "quick-wishes" },
+                h(Tag, { className: "wish-tag", onClick: () => form.setFieldValue("wish", WISHES[0]) }, "+ Chúc mừng tân cử nhân"),
+                h(Tag, { className: "wish-tag", onClick: () => form.setFieldValue("wish", WISHES[1]) }, "+ Hẹn chụp thật nhiều ảnh"))),
+            h(Button, { type: "primary", htmlType: "submit", block: true, loading, className: "send-btn" }, loading ? "Đang gửi…" : "Gửi xác nhận & lời chúc"),
+            status && h("div", { className: "feedback " + (status.ok ? "ok" : "error"), role: "status" }, status.text),
+          );
+        }
+
+        ReactDOM.createRoot($("rsvpRoot")).render(
+          h(ConfigProvider, {
+            locale: antd.locale && antd.locale.vi_VN,
+            theme: {
+              token: {
+                colorPrimary: "#ea580c",
+                borderRadius: 14,
+                fontFamily: '"Be Vietnam Pro", -apple-system, "Segoe UI", sans-serif',
+                colorText: "#18181b",
+                controlHeightLG: 50,
+              },
+              components: { Radio: { buttonSolidCheckedBg: "#0f172a", buttonSolidCheckedHoverBg: "#1e293b", buttonSolidCheckedActiveBg: "#0f172a" } },
+            },
+          }, h(AntApp, null, h(RsvpForm))),
+        );
       })();
     </script>
   </body>
