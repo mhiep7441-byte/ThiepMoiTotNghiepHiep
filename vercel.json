@@ -8,6 +8,20 @@
       "source": "/",
       "destination": "/index.html"
     }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)\\.ics",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "text/calendar; charset=utf-8"
+        },
+        {
+          "key": "Content-Disposition",
+          "value": "inline; filename=le-tot-nghiep.ics"
+        }
+      ]
+    }
   ]
 }
-

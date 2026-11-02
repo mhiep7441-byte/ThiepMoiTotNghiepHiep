@@ -1178,7 +1178,7 @@
           <div class="hero-copy fade">
             <div class="badge-pill">
               <span class="badge-dot"></span>
-              <span>Lễ Tốt Nghiệp · Class of 2026</span>
+              <span>Lễ Tốt Nghiệp Class of 2026</span>
             </div>
 
             <h1 class="hero-title">
@@ -1306,8 +1306,8 @@
                 Đại học FPT.
               </p>
             </div>
-            <a class="bento-action" id="calendar" href="#">
-              + Thêm vào lịch điện thoại
+            <a class="bento-action" id="calendar" href="./le-tot-nghiep.ics">
+              + Thêm vào lịch
             </a>
           </div>
 
@@ -1364,7 +1364,7 @@
         <div class="rsvp-container reveal">
           <div class="rsvp-info">
             <span class="section-kicker">Xác nhận &amp; Lưu bút</span>
-            <h2>Hẹn gặp bạn trong ngày vui của Hiệp!</h2>
+            <h2>Hẹn gặp bạn ở lễ tốt nghiệp của Hiệp!</h2>
             <p>
               Hãy cho Hiệp biết bạn có thể sắp xếp ghé tham dự được không nhé.
               Nếu bận không thể đến trực tiếp, đôi dòng lời chúc của bạn tại đây
@@ -1475,41 +1475,6 @@
           card.addEventListener("mouseleave", () => (card.style.transform = ""));
         }
 
-        // Add to the phone's default calendar via an .ics file
-        $("calendar").addEventListener("click", (e) => {
-          e.preventDefault();
-          const lines = [
-            "BEGIN:VCALENDAR",
-            "VERSION:2.0",
-            "PRODID:-//Mai Quoc Hiep//Graduation 2026//VI",
-            "CALSCALE:GREGORIAN",
-            "METHOD:PUBLISH",
-            "BEGIN:VEVENT",
-            "UID:graduation-mai-quoc-hiep-20261107@thiepmoi",
-            "DTSTAMP:" + new Date().toISOString().replace(/[-:]|\.\d{3}/g, ""),
-            "DTSTART:20261107T093000Z",
-            "DTEND:20261107T123000Z",
-            "SUMMARY:Lễ tốt nghiệp Mai Quốc Hiệp",
-            "DESCRIPTION:Hẹn gặp bạn lúc 16:30 chiều Thứ Bảy (07/11/2026) trong lễ tốt nghiệp của Hiệp tại Đại học FPT TP.HCM!",
-            "LOCATION:Đại học FPT TP. Hồ Chí Minh\\, Lô E2a-7\\, Đường D1",
-            "BEGIN:VALARM",
-            "TRIGGER:-PT2H",
-            "ACTION:DISPLAY",
-            "DESCRIPTION:Lễ tốt nghiệp Mai Quốc Hiệp - 16:30 hôm nay",
-            "END:VALARM",
-            "END:VEVENT",
-            "END:VCALENDAR",
-          ];
-          const blob = new Blob([lines.join("\r\n")], { type: "text/calendar;charset=utf-8" });
-          const url = URL.createObjectURL(blob);
-          const link = document.createElement("a");
-          link.href = url;
-          link.download = "le-tot-nghiep-mai-quoc-hiep.ics";
-          document.body.appendChild(link);
-          link.click();
-          link.remove();
-          setTimeout(() => URL.revokeObjectURL(url), 4000);
-        });
 
         // ---------- Ant Design RSVP form ----------
         const { ConfigProvider, Form, Input, Radio, Button, App: AntApp, theme } = antd;
