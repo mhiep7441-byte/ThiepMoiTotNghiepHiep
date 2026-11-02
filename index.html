@@ -1208,22 +1208,6 @@
       .cd-box:hover{transform:translateY(-6px)}
       @media (max-width:900px){.marquee{margin:6px -16px 18px}.cursor-glow{display:none}}
 
-      .cal-modal-backdrop{position:fixed;inset:0;background:rgba(24,13,8,.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);z-index:900;display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;pointer-events:none;transition:opacity .25s ease}
-      .cal-modal-backdrop.show{opacity:1;pointer-events:auto}
-      .cal-modal{background:#fffdf9;border:1px solid var(--border-strong);border-radius:28px;max-width:440px;width:100%;padding:28px 26px 24px;box-shadow:0 32px 72px -12px rgba(42,24,16,.32);transform:translateY(16px) scale(.97);transition:transform .28s cubic-bezier(.22,1,.36,1)}
-      .cal-modal-backdrop.show .cal-modal{transform:none}
-      .cal-modal-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:14px}
-      .cal-modal-title{font-family:"Plus Jakarta Sans",sans-serif;font-size:20px;font-weight:800;color:var(--ink);margin:0}
-      .cal-modal-close{background:var(--bg-soft);border:none;width:34px;height:34px;border-radius:50%;font-size:18px;line-height:1;color:var(--sub);display:inline-flex;align-items:center;justify-content:center;transition:background .2s}
-      .cal-modal-close:hover{background:#fed7aa;color:var(--ink)}
-      .cal-modal-summary{background:var(--bg-soft);border-radius:16px;padding:14px 16px;margin-bottom:18px;font-size:13.5px;line-height:1.55;color:var(--sub);border:1px solid var(--border)}
-      .cal-modal-summary strong{color:var(--ink);display:block;font-size:14.5px;margin-bottom:2px}
-      .cal-modal-actions{display:grid;gap:10px}
-      .cal-opt{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px 18px;border-radius:16px;font-size:14px;font-weight:700;border:1.5px solid var(--border-strong);background:#fff;color:var(--ink);transition:all .2s ease;text-align:left}
-      .cal-opt:hover{border-color:var(--brand);background:#fff7ed;transform:translateY(-1px)}
-      .cal-opt.primary{background:linear-gradient(135deg,#d9531e 0%,#d97706 100%);color:#fff;border-color:transparent;box-shadow:0 12px 24px -8px rgba(217,83,30,.45)}
-      .cal-opt.primary:hover{filter:brightness(1.05)}
-      .cal-opt small{display:block;font-weight:400;font-size:12px;opacity:.82;margin-top:2px}
     </style>
   </head>
   <body class="loading">
@@ -1389,9 +1373,7 @@
                 Đại học FPT.
               </p>
             </div>
-            <a class="bento-action" id="calendar" href="./le-tot-nghiep.ics">
-              + Thêm vào lịch
-            </a>
+
           </div>
 
           <div class="bento-card featured reveal" style="--d:.12s">
@@ -1486,47 +1468,6 @@
       <span>Lễ Tốt Nghiệp Đại học FPT TP.HCM · 07.11.2026 · 16:30</span>
     </footer>
 
-    <div class="cal-modal-backdrop" id="calModal" role="dialog" aria-modal="true" aria-labelledby="calModalTitle">
-      <div class="cal-modal">
-        <div class="cal-modal-head">
-          <h3 class="cal-modal-title" id="calModalTitle">Thêm lịch hẹn tốt nghiệp</h3>
-          <button type="button" class="cal-modal-close" id="calClose" aria-label="Đóng">×</button>
-        </div>
-        <div class="cal-modal-summary">
-          <strong>Lễ tốt nghiệp Mai Quốc Hiệp</strong>
-          16:30 Chiều Thứ Bảy · 07.11.2026<br />
-          Đại học FPT TP. Hồ Chí Minh
-        </div>
-        <div class="cal-modal-actions">
-          <a
-            class="cal-opt primary"
-            id="calGoogle"
-            href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=L%E1%BB%85%20t%E1%BB%91t%20nghi%E1%BB%87p%20Mai%20Qu%E1%BB%91c%20Hi%E1%BB%87p&dates=20261107T093000Z/20261107T123000Z&details=H%E1%BA%B9n%20g%E1%BA%B7p%20b%E1%BA%A1n%20l%C3%BAc%2016%3A30%20chi%E1%BB%81u%20Th%E1%BB%A9%20B%E1%BA%A3y%20(07%2F11%2F2026)%20t%E1%BA%A1i%20%C4%90%E1%BA%A1i%20h%E1%BB%8Dc%20FPT%20TP.HCM!&location=%C4%90%E1%BA%A1i%20h%E1%BB%8Dc%20FPT%20TP.%20H%E1%BB%93%20Ch%C3%AD%20Minh"
-            target="_blank"
-            rel="noopener"
-          >
-            <div>
-              Google Calendar
-              <small>Mở nhanh trên Điện thoại Android &amp; Máy tính</small>
-            </div>
-            <span>↗</span>
-          </a>
-          <a
-            class="cal-opt"
-            id="calIcs"
-            href="./le-tot-nghiep.ics"
-            download="le-tot-nghiep-mai-quoc-hiep.ics"
-          >
-            <div>
-              Lịch mặc định iPhone / Outlook (.ics)
-              <small>Dành cho Apple Calendar (iOS, macOS) &amp; Outlook</small>
-            </div>
-            <span>↓</span>
-          </a>
-        </div>
-      </div>
-    </div>
-
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/react@18.3.1/umd/react.production.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/react-dom@18.3.1/umd/react-dom.production.min.js"></script>
@@ -1562,21 +1503,6 @@
         }
         tick();
         setInterval(tick, 1000);
-
-        // Calendar modal handler
-        const calBtn = $("calendar"), calModal = $("calModal"), calClose = $("calClose");
-        if (calBtn && calModal) {
-          calBtn.addEventListener("click", (e) => {
-            e.preventDefault();
-            calModal.classList.add("show");
-          });
-          calClose.addEventListener("click", () => calModal.classList.remove("show"));
-          calModal.addEventListener("click", (e) => {
-            if (e.target === calModal) calModal.classList.remove("show");
-          });
-          $("calGoogle").addEventListener("click", () => setTimeout(() => calModal.classList.remove("show"), 200));
-          $("calIcs").addEventListener("click", () => setTimeout(() => calModal.classList.remove("show"), 200));
-        }
 
         // Stable anchor scrolling (no jump to the bottom)
         document.querySelectorAll('a[href^="#"]').forEach((a) => {

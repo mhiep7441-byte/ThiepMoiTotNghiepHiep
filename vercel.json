@@ -8,20 +8,5 @@
       "source": "/",
       "destination": "/index.html"
     }
-  ],
-  "headers": [
-    {
-      "source": "/le-tot-nghiep.ics",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "text/calendar; charset=utf-8"
-        },
-        {
-          "key": "Content-Disposition",
-          "value": "attachment; filename=le-tot-nghiep-mai-quoc-hiep.ics"
-        }
-      ]
-    }
   ]
 }
