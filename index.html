@@ -1368,7 +1368,7 @@
             <div class="rsvp-perks">
               <div class="perk-item">
                 <span class="perk-dot">01</span>
-                <span>Chụp ảnh kỷ niệm lấy liền &amp; lưu giữ thanh xuân</span>
+                <span>Cùng chụp những tấm ảnh kỷ niệm thật đẹp</span>
               </div>
               <div class="perk-item">
                 <span class="perk-dot">02</span>
@@ -1473,12 +1473,8 @@
           encodeURIComponent("Đại học FPT TP. Hồ Chí Minh");
 
         // ---------- Ant Design RSVP form ----------
-        const { ConfigProvider, Form, Input, Radio, Button, Tag, App: AntApp, theme } = antd;
+        const { ConfigProvider, Form, Input, Radio, Button, App: AntApp, theme } = antd;
         const h = React.createElement;
-        const WISHES = [
-          "Chúc mừng tân cử nhân Mai Quốc Hiệp! Chúc bạn luôn vững bước và gặt hái thật nhiều thành công trên chặng đường mới!",
-          "Hẹn gặp Hiệp lúc 16:30 chiều Thứ Bảy nhé, chuẩn bị tinh thần chụp thật nhiều ảnh đẹp nha!",
-        ];
 
         async function submitRsvp(values) {
           const guest = (values.guest || "").trim(),
@@ -1566,12 +1562,8 @@
               h(Radio.Group, { optionType: "button", buttonStyle: "solid", block: true, style: { display: "flex" }, className: "att-group" },
                 h(Radio.Button, { value: "yes", style: { flex: 1, textAlign: "center" } }, "Mình sẽ đến chung vui"),
                 h(Radio.Button, { value: "no", style: { flex: 1, textAlign: "center" } }, "Gửi lời chúc từ xa"))),
-            h(Form.Item, { label: "Lời nhắn dành cho Hiệp", style: { marginBottom: 12 } },
-              h(Form.Item, { name: "wish", noStyle: true },
-                h(Input.TextArea, { maxLength: 1000, showCount: true, autoSize: { minRows: 4, maxRows: 8 }, placeholder: "Viết vài dòng chúc mừng hoặc nhắn nhủ cho Hiệp nhé..." })),
-              h("div", { className: "quick-wishes" },
-                h(Tag, { className: "wish-tag", onClick: () => form.setFieldValue("wish", WISHES[0]) }, "+ Chúc mừng tân cử nhân"),
-                h(Tag, { className: "wish-tag", onClick: () => form.setFieldValue("wish", WISHES[1]) }, "+ Hẹn chụp thật nhiều ảnh"))),
+            h(Form.Item, { name: "wish", label: "Lời nhắn dành cho Hiệp" },
+              h(Input.TextArea, { maxLength: 1000, showCount: true, autoSize: { minRows: 4, maxRows: 8 }, placeholder: "Viết vài dòng chúc mừng hoặc nhắn nhủ cho Hiệp nhé..." })),
             h(Button, { type: "primary", htmlType: "submit", block: true, loading, className: "send-btn" }, loading ? "Đang gửi…" : "Gửi xác nhận & lời chúc"),
             status && h("div", { className: "feedback " + (status.ok ? "ok" : "error"), role: "status" }, status.text),
           );
