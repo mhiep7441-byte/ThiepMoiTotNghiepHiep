@@ -9,7 +9,7 @@
     <meta name="theme-color" content="#fcf8f2" />
     <meta
       name="description"
-      content="Thân mời bạn đến chung vui trong Lễ Tốt Nghiệp của Mai Quốc Hiệp — FPT University HCMC, Thứ Bảy 07.11.2026 · 16:30."
+      content="Thân mời bạn đến dự Lễ Tốt Nghiệp của Mai Quốc Hiệp — FPT University HCMC, Thứ Bảy 07.11.2026 · 16:30."
     />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Mai Quốc Hiệp · Lễ Tốt Nghiệp 2026" />
@@ -1182,13 +1182,13 @@
             </div>
 
             <h1 class="hero-title">
-              <span class="line"><span>Khép lại giảng đường,</span></span>
-              <span class="line"><span>mở ra <span class="serif-italic">hành trình mới.</span></span></span>
+              <span class="line"><span>Một cột mốc mới,</span></span>
+              <span class="line"><span>mong có <span class="serif-italic">bạn đồng hành.</span></span></span>
             </h1>
 
             <p class="hero-lead">
-              Thân mời bạn đến chung vui, lưu lại những khung hình kỷ niệm rực rỡ
-              nhất cùng <strong>Mai Quốc Hiệp</strong> trong buổi lễ tốt nghiệp
+              Thân mời bạn đến dự và cùng lưu lại những khung hình kỷ niệm đáng nhớ
+              nhất với <strong>Mai Quốc Hiệp</strong> trong buổi lễ tốt nghiệp
               tại Đại học FPT TP. Hồ Chí Minh.
             </p>
 
@@ -1270,8 +1270,7 @@
                 mốc thật đặc biệt của tuổi trẻ: Lễ tốt nghiệp đại học.
               </p>
               <p>
-                Mình trân trọng mời bạn dành chút thời gian cuối tuần đến chung
-                vui, trò chuyện và chụp cùng mình vài tấm hình kỷ niệm vào lúc
+                Mình trân trọng mời bạn dành chút thời gian cuối tuần đến dự, trò chuyện và chụp cùng mình vài tấm hình kỷ niệm vào lúc
                 <strong>16:30 chiều Thứ Bảy, ngày 07.11.2026</strong>. Sự hiện
                 diện của bạn chính là món quà ý nghĩa nhất dành cho Hiệp!
               </p>
@@ -1308,7 +1307,7 @@
               </p>
             </div>
             <a class="bento-action" id="calendar" href="#">
-              + Lưu vào Google Calendar ↗
+              + Thêm vào lịch điện thoại
             </a>
           </div>
 
@@ -1476,22 +1475,41 @@
           card.addEventListener("mouseleave", () => (card.style.transform = ""));
         }
 
-        // 16:30+07:00 = 09:30 UTC
-        const cstart = "20261107T093000Z",
-          cend = "20261107T123000Z";
-        $("calendar").href =
-          "https://calendar.google.com/calendar/render?action=TEMPLATE&text=" +
-          encodeURIComponent("Lễ tốt nghiệp Mai Quốc Hiệp") +
-          "&dates=" +
-          cstart +
-          "/" +
-          cend +
-          "&details=" +
-          encodeURIComponent(
-            "Hẹn gặp bạn lúc 16:30 chiều Thứ Bảy (07/11/2026) trong lễ tốt nghiệp của Hiệp tại Đại học FPT TP.HCM!",
-          ) +
-          "&location=" +
-          encodeURIComponent("Đại học FPT TP. Hồ Chí Minh");
+        // Add to the phone's default calendar via an .ics file
+        $("calendar").addEventListener("click", (e) => {
+          e.preventDefault();
+          const lines = [
+            "BEGIN:VCALENDAR",
+            "VERSION:2.0",
+            "PRODID:-//Mai Quoc Hiep//Graduation 2026//VI",
+            "CALSCALE:GREGORIAN",
+            "METHOD:PUBLISH",
+            "BEGIN:VEVENT",
+            "UID:graduation-mai-quoc-hiep-20261107@thiepmoi",
+            "DTSTAMP:" + new Date().toISOString().replace(/[-:]|\.\d{3}/g, ""),
+            "DTSTART:20261107T093000Z",
+            "DTEND:20261107T123000Z",
+            "SUMMARY:Lễ tốt nghiệp Mai Quốc Hiệp",
+            "DESCRIPTION:Hẹn gặp bạn lúc 16:30 chiều Thứ Bảy (07/11/2026) trong lễ tốt nghiệp của Hiệp tại Đại học FPT TP.HCM!",
+            "LOCATION:Đại học FPT TP. Hồ Chí Minh\\, Lô E2a-7\\, Đường D1",
+            "BEGIN:VALARM",
+            "TRIGGER:-PT2H",
+            "ACTION:DISPLAY",
+            "DESCRIPTION:Lễ tốt nghiệp Mai Quốc Hiệp - 16:30 hôm nay",
+            "END:VALARM",
+            "END:VEVENT",
+            "END:VCALENDAR",
+          ];
+          const blob = new Blob([lines.join("\r\n")], { type: "text/calendar;charset=utf-8" });
+          const url = URL.createObjectURL(blob);
+          const link = document.createElement("a");
+          link.href = url;
+          link.download = "le-tot-nghiep-mai-quoc-hiep.ics";
+          document.body.appendChild(link);
+          link.click();
+          link.remove();
+          setTimeout(() => URL.revokeObjectURL(url), 4000);
+        });
 
         // ---------- Ant Design RSVP form ----------
         const { ConfigProvider, Form, Input, Radio, Button, App: AntApp, theme } = antd;
@@ -1579,9 +1597,9 @@
             { form, layout: "vertical", size: "large", requiredMark: false, initialValues: { attendance: "yes" }, onFinish },
             h(Form.Item, { name: "guest", label: "Tên của bạn", rules: [{ required: true, whitespace: true, message: "Vui lòng nhập tên của bạn" }] },
               h(Input, { maxLength: 80, placeholder: "Nhập tên của bạn...", autoComplete: "name", allowClear: true })),
-            h(Form.Item, { name: "attendance", label: "Bạn sẽ đến chung vui cùng Hiệp chứ?", rules: [{ required: true }] },
+            h(Form.Item, { name: "attendance", label: "Bạn có thể đến dự cùng Hiệp không?", rules: [{ required: true }] },
               h(Radio.Group, { optionType: "button", buttonStyle: "solid", block: true, style: { display: "flex" }, className: "att-group" },
-                h(Radio.Button, { value: "yes", style: { flex: 1, textAlign: "center" } }, "Mình sẽ đến chung vui"),
+                h(Radio.Button, { value: "yes", style: { flex: 1, textAlign: "center" } }, "Mình sẽ đến dự"),
                 h(Radio.Button, { value: "no", style: { flex: 1, textAlign: "center" } }, "Gửi lời chúc từ xa"))),
             h(Form.Item, { name: "wish", label: "Lời nhắn dành cho Hiệp" },
               h(Input.TextArea, { maxLength: 1000, showCount: true, autoSize: { minRows: 4, maxRows: 8 }, placeholder: "Viết vài dòng chúc mừng hoặc nhắn nhủ cho Hiệp nhé..." })),
