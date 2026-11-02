@@ -11,7 +11,7 @@
   ],
   "headers": [
     {
-      "source": "/(.*)\\.ics",
+      "source": "/le-tot-nghiep.ics",
       "headers": [
         {
           "key": "Content-Type",
@@ -19,7 +19,7 @@
         },
         {
           "key": "Content-Disposition",
-          "value": "inline; filename=le-tot-nghiep.ics"
+          "value": "attachment; filename=le-tot-nghiep-mai-quoc-hiep.ics"
         }
       ]
     }
